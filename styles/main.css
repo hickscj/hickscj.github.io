@@ -15,7 +15,7 @@ body {
     body header .face {
       border: 1px solid black;
       float: left;
-      margin: -15px 10px 10px 0;
-      width: 10%; }
+      width: 80px;
+      margin: -15px 10px 10px 0; }
 
 /*# sourceMappingURL=main.css.map */
