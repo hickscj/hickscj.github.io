@@ -2,6 +2,7 @@ body {
     background-color: aqua;
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
+    max-width: 800px;
     width: 80%;
     h2 {
         font-family: 'Mate SC', sans-serif;
@@ -12,13 +13,33 @@ body {
     }
     header {
         border-bottom: 1px solid black;
-        height: 100px;
+        height: 75px;
         padding-bottom: 10px;
+        h2 {
+            width: 50%;
+        }
         .face {
             border: 1px solid black;
             float: left;
             width: 80px;
             margin: -15px 10px 10px 0;
+        }
+    }
+    .breadcrumbs {
+        float: right;
+        clear: both;
+        padding: 15px 0;
+        list-style-type: none;
+        li {
+            float: left;
+        }
+    }
+    .right-column {
+        clear: left;
+    }
+    section {
+        h2 {
+            padding-bottom: 0;
         }
     }
 }
