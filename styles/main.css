@@ -32,6 +32,9 @@ body {
     clear: left; }
     #myResume .work-experience .job-title {
       font-size: larger; }
+    #myResume .work-experience ul {
+      list-style-type: none;
+      padding-left: 0; }
   #myResume section {
     margin-bottom: 30px; }
     #myResume section h2 {
