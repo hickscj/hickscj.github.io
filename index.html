@@ -23,7 +23,7 @@
             </ul>
         </header>
 
-        <div class="right-column">
+        <section class="work-experience">
             <ul>
                 <li v-for="job in jobs">
                     <h4 class="job-dates">{{ job.dates }}</h4>
@@ -31,7 +31,7 @@
                     <p>{{ job.description }}</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <section>
             <h3>Personality and Disposition</h3>
@@ -47,11 +47,9 @@
                 <li>Meyers-Briggs: ENFP</li>
             </ul>
         </section>
-    </div>
-
-    <div>
         <img src="img/grandmas-full.png" alt="Running Grandma's Marathon">
     </div>
+
 
     <script type="text/javascript">
         new Vue({

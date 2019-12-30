@@ -1,35 +1,40 @@
 body {
-  background-color: #fafafa;
+  background-color: #fafafa; }
+
+#myResume {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   max-width: 800px;
+  padding-bottom: 40px;
   width: 80%; }
-  body h2 {
+  #myResume h2 {
     font-family: 'Mate SC', sans-serif;
     font-size: 40px; }
-  body img {
+  #myResume img {
     width: 100%; }
-  body header {
+  #myResume header {
     border-bottom: 1px solid black;
     height: 75px;
     padding-bottom: 10px; }
-    body header h2 {
+    #myResume header h2 {
       margin-bottom: 0; }
-    body header .face {
+    #myResume header .face {
       border: 1px solid black;
       float: left;
       margin: -15px 20px 10px 0;
       width: 80px; }
-    body header .breadcrumbs {
+    #myResume header .breadcrumbs {
       margin: 5px 0 40px 15px;
       list-style-type: none; }
-      body header .breadcrumbs li {
+      #myResume header .breadcrumbs li {
         float: left; }
-  body .right-column {
+  #myResume .work-experience {
     clear: left; }
-    body .right-column .job-title {
+    #myResume .work-experience .job-title {
       font-size: larger; }
-  body section h2 {
-    padding-bottom: 0; }
+  #myResume section {
+    margin-bottom: 30px; }
+    #myResume section h2 {
+      padding-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
