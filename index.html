@@ -16,9 +16,9 @@
             <img class="face" src="img/chad_hicks.jpg" alt="">
             <h2>Chad J. Hicks</h2>
             <ul class="breadcrumbs">
-                <li>Software Engineer /&nbsp;</li>
-                <li>Barista /&nbsp;</li>
-                <li>Runner /&nbsp;</li>
+                <li>Software Engineer |&nbsp;</li>
+                <li>Barista |&nbsp;</li>
+                <li>Runner |&nbsp;</li>
                 <li>Musician</li>
             </ul>
         </header>
@@ -26,8 +26,8 @@
         <div class="right-column">
             <ul>
                 <li v-for="job in jobs">
-                    <h4 class="section-header">{{ job.dates }}</h4>
-                    <h4 class="section-header">{{ job.title }}</h4>
+                    <h4 class="job-dates">{{ job.dates }}</h4>
+                    <h4 class="job-title">{{ job.title }}</h4>
                     <p>{{ job.description }}</p>
                 </li>
             </ul>
