@@ -1,11 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import Job from "./Job";
+import Job from "./Job.js";
 import { firestore } from './firebase';
 
 const App = () => {
-    const jobs = firestore.collection('jobs').get();
-    console.log({ jobs });
 
     return (
         <div>
