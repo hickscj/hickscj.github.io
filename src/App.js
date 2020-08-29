@@ -16,13 +16,6 @@ const App = () => {
             </header>
 
             <section className="work-experience">
-                <ul>
-                    <li>
-                        <h4 className="job-dates">job dates</h4>
-                        <h4 className="job-title">job title</h4>
-                        <p>job desc</p>
-                    </li>
-                </ul>
                 <Jobs />
             </section>
 

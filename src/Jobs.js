@@ -14,7 +14,7 @@ const Jobs = () => {
                     console.log(res.jobs[0].title);
                     const jobList = res.jobs.map( (job) => {
                         // console.log(job.title);
-                        return <Job key={job.title} name={job.title} />
+                        return <Job key={job.title} name={job.title} dates={job.dates} desc={job.description} />
                     });
                     console.log(jobList);
                     setJobs(jobList);
