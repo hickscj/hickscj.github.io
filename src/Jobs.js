@@ -1,41 +1,32 @@
-import React, {Component} from "react";
-import { firestore } from './firebase';
+import React, { useState, useEffect } from "react";
+// import { firestore } from './firebase';
 
-class Jobs extends Component {
+const Jobs = () => {
+    const [hasErrors, setErrors] = useState(false);
+    const [jobs, setJobs] = useState({});
 
-    constructor() {
-        super();
-        this.jobs = [];
-    }
+    useEffect(() => {
+        async function fetchData() {
+            const res = await fetch("https://damp-spire-8402.herokuapp.com/jobs/")
+            res.json()
+                .then(res => {
+                    console.log(res.jobs[0].title);
+                    setJobs(res.jobs[0]);
+                })
+                .catch(err => setErrors(err));
+            }
+        fetchData();
+        
+        if(hasErrors) {
+            console.log(hasErrors);
+        }
+    }, []); // pass empty array to second arg to avoid repeated api calls
 
-    getJobs() {
-        firestore.collection('jobs').get().then( (data) => {
-            data.forEach(doc => {
-                const id = doc.id;
-                const data = doc.data();
-                this.jobs.push({id, data});
-                console.log(this.jobs);
-            });
-        });
-    }
-
-    // firestore.collection('jobs').get().then( data => {
-    //     data.forEach(doc => {
-    //         const id = doc.id;
-    //         const data = doc.data();
-    //         console.log({id, data});
-    //     });
-    // });
-
-    render() {
-        this.getJobs();
-        return (
-          <div>
-              <h2>JOBS!</h2>
-              <h3>{this.jobs[0].data.title}</h3>
-          </div>
-        );
-    }
+    return (
+        <div>
+            {jobs.title}            
+        </div>
+    );
 }
 
 export default Jobs;
