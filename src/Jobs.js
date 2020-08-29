@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Job from "./Job";
 // import { firestore } from './firebase';
 
 const Jobs = () => {
     const [hasErrors, setErrors] = useState(false);
-    const [jobs, setJobs] = useState({});
+    const [jobs, setJobs] = useState();
 
     useEffect(() => {
         async function fetchData() {
@@ -11,11 +12,16 @@ const Jobs = () => {
             res.json()
                 .then(res => {
                     console.log(res.jobs[0].title);
-                    setJobs(res.jobs[0]);
+                    const jobList = res.jobs.map( (job) => {
+                        // console.log(job.title);
+                        return <Job key={job.title} name={job.title} />
+                    });
+                    console.log(jobList);
+                    setJobs(jobList);
                 })
                 .catch(err => setErrors(err));
             }
-        fetchData();
+        fetchData().then(() => console.log('success') );
         
         if(hasErrors) {
             console.log(hasErrors);
@@ -24,7 +30,7 @@ const Jobs = () => {
 
     return (
         <div>
-            {jobs.title}            
+            {jobs}
         </div>
     );
 }
