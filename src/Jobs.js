@@ -11,16 +11,14 @@ const Jobs = () => {
             const res = await fetch("https://damp-spire-8402.herokuapp.com/jobs/")
             res.json()
                 .then(res => {
-                    console.log(res.jobs[0].title);
                     const jobList = res.jobs.map( (job) => {
                         // console.log(job.title);
                         return <Job key={job.title} name={job.title} dates={job.dates} desc={job.description} />
                     });
-                    console.log(jobList);
                     setJobs(jobList);
                 })
                 .catch(err => setErrors(err));
-            }
+        }
         fetchData().then(() => console.log('success') );
         
         if(hasErrors) {
