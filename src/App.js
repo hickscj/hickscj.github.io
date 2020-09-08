@@ -14,6 +14,14 @@ const App = () => {
                     <li>Musician</li>
                 </ul>
             </header>
+            
+            <ul className="tags">
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Sass</li>
+                <li>Docker</li>
+                <li>Freelance</li>
+            </ul>
 
             <section className="work-experience">
                 <Jobs />
