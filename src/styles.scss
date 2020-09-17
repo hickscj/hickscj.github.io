@@ -37,6 +37,17 @@ body {
             }
         }
     }
+    .tags {
+        margin: 5px 0 40px 15px;
+        list-style-type: none;
+        li {
+            border: 1px solid gray;
+            border-radius: 5px;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
     .work-experience {
         clear: left;
         .job-title {
