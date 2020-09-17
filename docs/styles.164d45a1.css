@@ -38,6 +38,17 @@ body {
 #myResume header .breadcrumbs li {
   float: left;
 }
+#myResume .tags {
+  margin: 5px 0 40px 15px;
+  list-style-type: none;
+}
+#myResume .tags li {
+  border: 1px solid gray;
+  border-radius: 5px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+}
 #myResume .work-experience {
   clear: left;
 }
