@@ -8,7 +8,7 @@ const App = () => {
             <header>
                 <img className="face" src={ require("../img/chad_hicks.jpg") } alt="" />
                 <h2>Chad J. Hicks</h2>
-                <ul className="breadcrumbs">
+                <ul className="identities">
                     <li>Software Engineer |&nbsp;</li>
                     <li>Runner |&nbsp;</li>
                     <li>Musician</li>
@@ -23,7 +23,7 @@ const App = () => {
                 <h3>Personality and Disposition</h3>
                 <ul>
                     <li>Strengths Finder: Input, Learner, Connectedness, Restorative, Strategic</li>
-                    <li>Enneagram: Type 9</li>
+                    <li>Enneagram: <a href="https://www.enneagraminstitute.com/type-9" target="_blank" rel="noreferrer">Type 9</a></li>
                     <li>
                         DiSC Assessment:
                         <br />Highest dimension: Steadiness and Conscientiousness
