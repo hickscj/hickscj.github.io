@@ -8,7 +8,7 @@ const Jobs = () => {
     const [jobs, setJobs] = useState();
 
     const firebaseConfig = {
-        apiKey: process.env.API_KEY,
+        apiKey: "AIzaSyDaIAnUkMqcNJwwdVAjrLaURzFa3kf0s4E",
         authDomain: "resume-api-81358.firebaseapp.com",
         databaseURL: "https://resume-api-81358.firebaseio.com",
         storageBucket: "resume-api-81358.appspot.com",
