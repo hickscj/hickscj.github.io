@@ -1,9 +1,8 @@
 import React from "react";
-// import { firestore } from './firebase';
 
 const Job = ({ dates, name, desc }) => {
     return (
-        <div>
+        <div className="job">
             <h4>{dates}</h4>
             <h4>{name}</h4>
             <p>{desc}</p>

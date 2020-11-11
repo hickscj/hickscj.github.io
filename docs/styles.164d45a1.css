@@ -2,6 +2,9 @@
 body {
   background-color: #fafafa;
 }
+body a {
+  color: #ff8200;
+}
 
 #myResume {
   font-family: "Raleway", sans-serif;
@@ -31,12 +34,19 @@ body {
   margin: -15px 20px 10px 0;
   width: 80px;
 }
-#myResume header .breadcrumbs {
+#myResume header .identities {
   margin: 5px 0 40px 15px;
   list-style-type: none;
 }
-#myResume header .breadcrumbs li {
+#myResume header .identities li {
   float: left;
+}
+#myResume header .specialties {
+  margin: 5px 0 40px 15px;
+  list-style-type: none;
+}
+#myResume header .specialties li {
+  float: right;
 }
 #myResume .tags {
   margin: 5px 0 40px 15px;
