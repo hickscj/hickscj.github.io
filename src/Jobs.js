@@ -5,7 +5,7 @@ import firebase from "firebase";
 
 const Jobs = () => {
     // const [hasErrors, setErrors] = useState(false);
-    const [jobs, setJobs] = useState();
+    const [jobs, setJobs] = useState([]);
 
     const firebaseConfig = {
         apiKey: "AIzaSyDaIAnUkMqcNJwwdVAjrLaURzFa3kf0s4E",
@@ -30,7 +30,7 @@ const Jobs = () => {
     }, []); // pass empty array to second arg to avoid repeated api calls
 
     return (
-        <div>
+        <div id="jobs">
             {jobs}
         </div>
     );
