@@ -11,11 +11,6 @@ body a {
   margin: 0 auto;
   max-width: 800px;
   padding-bottom: 40px;
-  width: 80%;
-}
-#myResume h2 {
-  font-family: "Mate SC", sans-serif;
-  font-size: 40px;
 }
 #myResume img {
   width: 100%;
@@ -26,6 +21,8 @@ body a {
   padding-bottom: 10px;
 }
 #myResume header h2 {
+  font-family: "Mate SC", sans-serif;
+  font-size: 2.2em;
   margin-bottom: 0;
 }
 #myResume header .face {
@@ -43,6 +40,7 @@ body a {
 }
 #myResume header .specialties {
   margin: 5px 0 40px 15px;
+  padding: 10px 0;
   list-style-type: none;
 }
 #myResume header .specialties li {
@@ -59,21 +57,34 @@ body a {
   margin: 5px;
   padding: 5px;
 }
-#myResume .work-experience {
-  clear: left;
-}
-#myResume .work-experience .job-title {
-  font-size: larger;
-}
-#myResume .work-experience ul {
-  list-style-type: none;
-  padding-left: 0;
-}
 #myResume section {
   margin-bottom: 30px;
 }
+#myResume section.work-experience {
+  clear: right;
+  margin-top: 2em;
+}
+#myResume section.work-experience .job {
+  border: 1px solid #e3e3e3;
+  margin: 10px 0;
+  padding: 5px 20px;
+}
+#myResume section.work-experience .job h4 {
+  font-size: 1.2em;
+}
+#myResume section.work-experience .job h4:first-of-type {
+  float: right;
+}
+#myResume section.work-experience ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 #myResume section h2 {
   padding-bottom: 0;
+}
+#myResume #grandmas {
+  margin-top: 20px;
+  margin-bottom: 200px;
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

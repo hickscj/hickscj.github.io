@@ -28377,12 +28377,13 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { firestore } from './firebase';
 var Job = function Job(_ref) {
   var dates = _ref.dates,
       name = _ref.name,
       desc = _ref.desc;
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h4", null, dates), /*#__PURE__*/_react.default.createElement("h4", null, name), /*#__PURE__*/_react.default.createElement("p", null, desc));
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "job"
+  }, /*#__PURE__*/_react.default.createElement("h4", null, dates), /*#__PURE__*/_react.default.createElement("h4", null, name), /*#__PURE__*/_react.default.createElement("p", null, desc));
 };
 
 var _default = Job;
@@ -83614,7 +83615,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Jobs = function Jobs() {
   // const [hasErrors, setErrors] = useState(false);
-  var _useState = (0, _react.useState)(),
+  var _useState = (0, _react.useState)([]),
       _useState2 = (0, _slicedToArray2.default)(_useState, 2),
       jobs = _useState2[0],
       setJobs = _useState2[1];
@@ -83646,7 +83647,9 @@ var Jobs = function Jobs() {
     });
   }, []); // pass empty array to second arg to avoid repeated api calls
 
-  return /*#__PURE__*/_react.default.createElement("div", null, jobs);
+  return /*#__PURE__*/_react.default.createElement("div", {
+    id: "jobs"
+  }, jobs);
 };
 
 var _default = Jobs;
@@ -83719,10 +83722,13 @@ var App = function App() {
     href: "https://www.verywellmind.com/enfp-an-overview-of-the-champion-personality-type-2795980",
     target: "_blank",
     rel: "noreferrer"
-  }, "ENFP")))), /*#__PURE__*/_react.default.createElement("img", {
+  }, "ENFP"))), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#"
+  }, "Return to Top"), /*#__PURE__*/_react.default.createElement("img", {
+    id: "grandmas",
     src: require("../img/grandmas-full.png"),
     alt: "Running Grandma's Marathon"
-  }));
+  })));
 };
 
 (0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
@@ -83754,7 +83760,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41981" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45227" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
