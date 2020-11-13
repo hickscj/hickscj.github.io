@@ -1,32 +1,27 @@
 import React, { useState, useEffect } from "react";
 import Job from "./Job";
-import firebase from "firebase";
+import { firestore } from "./firebase";
 
 
 const Jobs = () => {
-    // const [hasErrors, setErrors] = useState(false);
     const [jobs, setJobs] = useState([]);
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyDaIAnUkMqcNJwwdVAjrLaURzFa3kf0s4E",
-        authDomain: "resume-api-81358.firebaseapp.com",
-        databaseURL: "https://resume-api-81358.firebaseio.com",
-        storageBucket: "resume-api-81358.appspot.com",
-    };
-      
-    if(!firebase.apps.length) {
-        firebase.initializeApp(firebaseConfig);
-    }
-
     useEffect(() => {
-        firebase.database().ref('jobs').once('value').then((snapshot) => {
-            let res = snapshot.val();
-            const jobList = res.map( (job) => {
-                // console.log(job.title);
-                return <Job key={job.title} name={job.title} dates={job.dates} desc={job.description} />
+        async function fetchData() {
+            const snapshot = await firestore.collection('jobs').get();
+            // const jobList = [];
+            // snapshot.forEach( doc => {
+            //     let job = doc.data();
+            //     jobList.push(<Job key={job.title} name={job.title} dates={job.dates} desc={job.description} />)
+            // });
+            const jobList = snapshot.docs.map( doc => {
+                let job = doc.data();
+                console.log(job);
+                return <Job {...job} key={job.title} />;
             });
             setJobs(jobList);
-        });
+        }
+        fetchData();
     }, []); // pass empty array to second arg to avoid repeated api calls
 
     return (

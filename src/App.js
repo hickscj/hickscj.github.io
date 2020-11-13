@@ -44,9 +44,9 @@ const App = () => {
                     </li>
                     <li>Meyers-Briggs: <a href="https://www.verywellmind.com/enfp-an-overview-of-the-champion-personality-type-2795980" target="_blank" rel="noreferrer">ENFP</a></li>
                 </ul>
-                <a href="#">Return to Top</a>
-                <img id="grandmas" src={ require("../img/grandmas-full.png") } alt="Running Grandma's Marathon" />
             </section>
+            <a href="#">Return to Top</a>
+            <img id="grandmas" src={ require("../img/grandmas-full.png") } alt="Running Grandma's Marathon" />
         </div>
     )
 };

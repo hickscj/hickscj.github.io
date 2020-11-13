@@ -1,6 +1,8 @@
 import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 const firebaseConfig = {
+  projectId: "resume-api-81358",
   apiKey: "AIzaSyDaIAnUkMqcNJwwdVAjrLaURzFa3kf0s4E",
   authDomain: "resume-api-81358.firebaseapp.com",
   databaseURL: "https://resume-api-81358.firebaseio.com",
@@ -9,8 +11,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// window.firebase = firebase;
-
-// export const database = firebase.database();
+export const firestore = firebase.firestore();
 
 export default firebase;
