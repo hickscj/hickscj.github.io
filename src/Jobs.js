@@ -8,15 +8,9 @@ const Jobs = () => {
 
     useEffect(() => {
         async function fetchData() {
-            const snapshot = await firestore.collection('jobs').get();
-            // const jobList = [];
-            // snapshot.forEach( doc => {
-            //     let job = doc.data();
-            //     jobList.push(<Job key={job.title} name={job.title} dates={job.dates} desc={job.description} />)
-            // });
+            const snapshot = await firestore.collection('jobs').orderBy('dates', 'desc').get();
             const jobList = snapshot.docs.map( doc => {
                 let job = doc.data();
-                console.log(job);
                 return <Job {...job} key={job.title} />;
             });
             setJobs(jobList);
