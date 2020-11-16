@@ -1,11 +1,11 @@
 import React from "react";
 
-const Job = ({ dates, name, desc }) => {
+const Job = ({ title, dates, description }) => {
     return (
         <div className="job">
             <h4>{dates}</h4>
-            <h4>{name}</h4>
-            <p>{desc}</p>
+            <h4>{title}</h4>
+            <p>{description}</p>
         </div>
     );
 }
