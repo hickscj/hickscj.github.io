@@ -8,6 +8,6 @@ const Job = ({ title, dates, description }) => {
             <p>{description}</p>
         </div>
     );
-}
+};
 
 export default Job;

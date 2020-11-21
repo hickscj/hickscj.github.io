@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap');
 
+/* based off FF8200 */
+
+/* SCSS HEX */
+$orange: #ff8200ff;
+$eggplant: #493843ff;
+$polished-pine: #61988eff;
+$ash-gray: #a0b2a6ff;
+$warm-black: #004346ff;
+
+/* SCSS HEX */
+$orange: #ff8200ff;
+$outer-space-crayola: #283d3bff;
+$skobeloff: #197278ff;
+$liver-organ: #772e25ff;
+$lavender-blush: #eee5e9ff;
+
+$border: $lavender-blush;
+
 body {
-    background-color: #fafafa;
+    background-color: #FFFFFA;
     a {
-       color: #ff8200;
+       color: $orange;
     }
 }
 
