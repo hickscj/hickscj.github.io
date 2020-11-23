@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import Jobs from "./Jobs";
+import WorkExperience from "./WorkExperience";
 import About from "./About";
 
 const App = () => {
@@ -22,9 +22,8 @@ const App = () => {
                 </ul>
             </header>
 
-            <section className="work-experience">
-                <Jobs />
-            </section>
+            
+            <WorkExperience />
 
             <About />
 

@@ -3,7 +3,7 @@ import Job from "./Job";
 import { firestore } from "./firebase";
 
 
-const Jobs = () => {
+export default function WorkExperience() {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
@@ -19,10 +19,8 @@ const Jobs = () => {
     }, []); // pass empty array to second arg to avoid repeated api calls
 
     return (
-        <div id="jobs">
+        <section className="work-experience">
             {jobs}
-        </div>
+        </section>
     );
 }
-
-export default Jobs;
