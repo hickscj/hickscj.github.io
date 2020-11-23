@@ -4,6 +4,8 @@ export default class About extends Component {
     render() {
         return (
             <section id="about">
+                <h3>About</h3>
+                <p>I am a Software Engineer who loves science, the outdoors, and learning new things.</p>
                 <h3>Personality and Disposition</h3>
                 <ul>
                     <li>Strengths Finder: 
