@@ -16,12 +16,20 @@ $skobeloff: #197278ff;
 $liver-organ: #772e25ff;
 $lavender-blush: #eee5e9ff;
 
-$border: $lavender-blush;
+/* SCSS HSL */
+$middle-blue: hsla(187, 54%, 70%, 1);
+$slate-blue: hsla(241, 62%, 63%, 1);
+$persian-blue: hsla(236, 71%, 48%, 1);
+$oxford-blue: hsla(224, 61%, 16%, 1);
+$rich-black-fogra-29: hsla(204, 28%, 7%, 1);
+
+$border: $rich-black-fogra-29;
 
 body {
-    background-color: #FFFFFA;
+    background-color: $ash-gray;
+    color: $rich-black-fogra-29;
     a {
-       color: $orange;
+       color: $persian-blue;
     }
 }
 
@@ -34,7 +42,7 @@ body {
         width: 100%;
     }
     header {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $border;
         height: 75px;
         padding-bottom: 10px;
         h2 {
@@ -68,7 +76,6 @@ body {
         margin: 5px 0 40px 15px;
         list-style-type: none;
         li {
-            border: 1px solid gray;
             border-radius: 5px;
             float: left;
             margin: 5px;
@@ -81,7 +88,7 @@ body {
             clear: right;
             margin-top: 2em;
             .job {
-                border: 1px solid lighten($color: #000000, $amount: 89);
+                border-bottom: 1px solid $border;
                 margin: 10px 0;
                 padding: 5px 20px;
                 h4 {
