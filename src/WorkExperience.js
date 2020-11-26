@@ -8,10 +8,10 @@ export default function WorkExperience() {
 
     useEffect(() => {
         async function fetchData() {
-            const snapshot = await firestore.collection('jobs').get();
+            const snapshot = await firestore.collection('jobs').orderBy("id", "desc").get();
             const jobList = snapshot.docs.map( doc => {
                 let job = doc.data();
-                return <Job {...job} key={job.key} />;
+                return <Job {...job} key={job.id} />;
             });
             setJobs(jobList);
         }

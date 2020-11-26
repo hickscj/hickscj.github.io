@@ -23,16 +23,25 @@ $persian-blue: hsla(236, 71%, 48%, 1);
 $oxford-blue: hsla(224, 61%, 16%, 1);
 $rich-black-fogra-29: hsla(204, 28%, 7%, 1);
 
-$text: hsla(325, 50%, 21%, 1); //#521b3b;
-$background: hsla(145, 53%, 80%, 1); //#b0e7c7;
+/* SCSS HSL */
+$onyx: hsla(200, 5%, 24%, 1);
+$steel-teal: hsla(192, 24%, 50%, 1);
+$cornsilk: hsla(49, 100%, 95%, 1);
+$dark-electric-blue: hsla(206, 19%, 41%, 1);
+$gamboge: hsla(39, 100%, 45%, 1);
 
-$border: lighten($background, 16%);
+$text: hsla(325, 50%, 21%, 1); //#521b3b;
+// $background: hsla(145, 53%, 80%, 1); //#b0e7c7;
+
+$background: $cornsilk;
+
+$border: $steel-teal;
 
 body {
     background-color: $background;
     color: $text;
     a {
-       color: $persian-blue;
+       color: $orange;
     }
 }
 
