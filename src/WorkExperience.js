@@ -3,15 +3,15 @@ import Job from "./Job";
 import { firestore } from "./firebase";
 
 
-const Jobs = () => {
+export default function WorkExperience() {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            const snapshot = await firestore.collection('jobs').orderBy('dates', 'desc').get();
+            const snapshot = await firestore.collection('jobs').get();
             const jobList = snapshot.docs.map( doc => {
                 let job = doc.data();
-                return <Job {...job} key={job.title} />;
+                return <Job {...job} key={job.key} />;
             });
             setJobs(jobList);
         }
@@ -19,10 +19,8 @@ const Jobs = () => {
     }, []); // pass empty array to second arg to avoid repeated api calls
 
     return (
-        <div id="jobs">
+        <section className="work-experience">
             {jobs}
-        </div>
+        </section>
     );
 }
-
-export default Jobs;
