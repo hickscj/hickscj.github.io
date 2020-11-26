@@ -23,11 +23,14 @@ $persian-blue: hsla(236, 71%, 48%, 1);
 $oxford-blue: hsla(224, 61%, 16%, 1);
 $rich-black-fogra-29: hsla(204, 28%, 7%, 1);
 
-$border: $rich-black-fogra-29;
+$text: hsla(325, 50%, 21%, 1); //#521b3b;
+$background: hsla(145, 53%, 80%, 1); //#b0e7c7;
+
+$border: lighten($background, 16%);
 
 body {
-    background-color: $ash-gray;
-    color: $rich-black-fogra-29;
+    background-color: $background;
+    color: $text;
     a {
        color: $persian-blue;
     }
@@ -47,29 +50,22 @@ body {
         padding-bottom: 10px;
         h2 {
             font-family: 'Mate SC', sans-serif;
-            font-size: 2.2em;
+            font-size: 3.5em;
             margin-bottom: 0;
         }
         .face {
-            border: 1px solid black;
+            border: 1px solid $border;
             float: left;
             margin: -15px 20px 10px 0;
             width: 80px;
         }
-        .identities {
-            margin: 5px 0 40px 15px;
-            list-style-type: none;
-            li {
-                float: left;
-            }
-        }
-        .specialties {
-            margin: 5px 0 40px 15px;
-            padding: 10px 0;
-            list-style-type: none;
-            li {
-                float: right;
-            }
+    }
+    .specialties {
+        margin: 5px 0 40px 15px;
+        padding: 10px 0;
+        list-style-type: none;
+        li {
+            float: right;
         }
     }
     .tags {
@@ -93,9 +89,7 @@ body {
                 padding: 5px 20px;
                 h4 {
                     font-size: 1.2em;
-                    &:first-of-type {
-                        float: right;
-                    }
+                    margin-top: 0;
                 }
             }
             ul {

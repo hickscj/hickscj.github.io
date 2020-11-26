@@ -9,19 +9,14 @@ const App = () => {
             <header>
                 <img className="face" src={ require("../img/chad_hicks.jpg") } alt="" />
                 <h2>Chad J. Hicks</h2>
-                <ul className="identities">
-                    <li>Software Engineer |&nbsp;</li>
-                    <li>Runner |&nbsp;</li>
-                    <li>Musician</li>
-                </ul>
-                <ul className="specialties">
-                    <li><a href="#about">About Me</a></li>
-                    <li>CSS |&nbsp;</li>
-                    <li>PHP |&nbsp;</li>
-                    <li>JavaScript |&nbsp;</li>
-                </ul>
             </header>
 
+            <ul className="specialties">
+                <li><a href="#about">About Me</a></li>
+                <li>CSS |&nbsp;</li>
+                <li>PHP |&nbsp;</li>
+                <li>JavaScript |&nbsp;</li>
+            </ul>
             
             <WorkExperience />
 
