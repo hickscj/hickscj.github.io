@@ -31,17 +31,17 @@ $dark-electric-blue: hsla(206, 19%, 41%, 1);
 $gamboge: hsla(39, 100%, 45%, 1);
 
 $text: hsla(325, 50%, 21%, 1); //#521b3b;
-// $background: hsla(145, 53%, 80%, 1); //#b0e7c7;
+$mint-green: hsla(145, 53%, 37%, 1); //#b0e7c7;
 
 $background: $cornsilk;
 
 $border: $steel-teal;
 
 body {
-    background-color: $background;
+    background: $background;
     color: $text;
     a {
-       color: $orange;
+       color: $mint-green;
     }
 }
 
