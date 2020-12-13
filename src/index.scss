@@ -23,6 +23,8 @@ $persian-blue: hsla(236, 71%, 48%, 1);
 $oxford-blue: hsla(224, 61%, 16%, 1);
 $rich-black-fogra-29: hsla(204, 28%, 7%, 1);
 
+$mint-cream: hsla(107, 36%, 95%, 1);
+
 /* SCSS HSL */
 $onyx: hsla(200, 5%, 24%, 1);
 $steel-teal: hsla(192, 24%, 50%, 1);
@@ -30,12 +32,12 @@ $cornsilk: hsla(49, 100%, 95%, 1);
 $dark-electric-blue: hsla(206, 19%, 41%, 1);
 $gamboge: hsla(39, 100%, 45%, 1);
 
-$text: hsla(325, 50%, 21%, 1); //#521b3b;
+$text: $onyx; //#521b3b;
 $mint-green: hsla(145, 53%, 37%, 1); //#b0e7c7;
 
-$background: $cornsilk;
+$background: $mint-cream;
 
-$border: $steel-teal;
+$border: $onyx;
 
 body {
     background: $background;
@@ -50,11 +52,8 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding-bottom: 40px;
-    img {
-        width: 100%;
-    }
     header {
-        border-bottom: 1px solid $border;
+        // border-bottom: 1px solid $border;
         height: 75px;
         padding-bottom: 10px;
         h2 {
@@ -64,8 +63,9 @@ body {
         }
         .face {
             border: 1px solid $border;
+            border-radius: 50px;
             float: left;
-            margin: -15px 20px 10px 0;
+            margin: -5px 20px 10px 0;
             width: 80px;
         }
     }
@@ -120,10 +120,14 @@ body {
                 float: right;
             }
         }
+        ul li {
+            margin: 5px 0;
+        }
     }
     #grandmas {
         margin-top: 20px;
         margin-bottom: 200px;
+        width: 100%;
     }
 }
 

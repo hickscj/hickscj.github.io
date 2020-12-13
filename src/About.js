@@ -5,7 +5,7 @@ export default class About extends Component {
         return (
             <section id="about">
                 <h3>About</h3>
-                <p>I am a Software Engineer who loves science, the outdoors, and learning new things.</p>
+                <p>I am a Software Engineer who loves science, the outdoors, and learning new things. I&apos;m also interested in psychology and productivity.</p>
                 <h3>Personality and Disposition</h3>
                 <ul>
                     <li>Strengths Finder: 
