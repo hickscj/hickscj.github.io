@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
+import BarChart from "./BarChart";
 // import ExperienceChart from "./ExperienceChart";
 
 class App extends Component {
+
+    getStuff() {
+        fetch('http://localhost:5000/jobs').then( (res) => {
+            return res.json();
+        }).then( (jsonData) => {
+            console.log(jsonData);
+        });
+    }
+
+    componentDidMount() {
+        this.getStuff();
+    }
 
     toTop() {
         window.scrollTo({
@@ -28,12 +41,13 @@ class App extends Component {
                     <li>JavaScript |&nbsp;</li>
                 </ul>
 
+                <BarChart />
                 {/* <ExperienceChart /> */}
                 <WorkExperience />
 
                 <About />
 
-                <button onClick={ this.toTop }>Return to top</button>
+                <button id="to-top" onClick={ this.toTop }>^</button>
                 <img id="grandmas" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
             </div>
         );
