@@ -4,5 +4,5 @@ dist/
 coverage/
 .env
 .idea/
-
+.eslintcache
 
