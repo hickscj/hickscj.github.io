@@ -18,7 +18,7 @@ class BarChart extends Component {
             .attr('y', 0)
             .attr('width', 65)
             .attr('height', 101)
-            .attr('fill', 'green');
+            .attr('fill', 'lightblue');
     }
 
     componentDidMount() {

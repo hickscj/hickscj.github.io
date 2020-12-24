@@ -3,6 +3,8 @@ import WorkExperience from "./WorkExperience";
 import About from "./About";
 import BarChart from "./BarChart";
 // import ExperienceChart from "./ExperienceChart";
+// import TestComponent from './TestComponent.class';
+import TestComponent from './TestComponent.func';
 
 class App extends Component {
 
@@ -26,6 +28,26 @@ class App extends Component {
         });
     }
 
+    toAbout() {
+        let coords = document.getElementById('about').getBoundingClientRect();
+        window.scrollTo({
+            top: coords.top,
+            left: coords.left,
+            behavior: 'smooth'
+        });
+    }
+
+    highlightRelevant(evt) {
+        switch(evt.target.textContent) {
+            case 'JavaScript': console.log('js');
+                break;
+            case 'PHP': console.log('php');
+                break;
+            default:
+                console.log('css');
+        }
+    }
+
     render() {
         return (
             <div id="myResume">
@@ -35,11 +57,13 @@ class App extends Component {
                 </header>
 
                 <ul className="specialties">
-                    <li><a href="#about">About Me</a></li>
-                    <li>CSS |&nbsp;</li>
-                    <li>PHP |&nbsp;</li>
-                    <li>JavaScript |&nbsp;</li>
+                    <li><button className='linkish' onClick={ this.toAbout }>About Me</button></li>
+                    <li><button className='linkish' onClick={ this.highlightRelevant }>CSS</button></li>
+                    <li><button className='linkish' onClick={ this.highlightRelevant }>PHP</button></li>
+                    <li><button className='linkish' onClick={ this.highlightRelevant }>JavaScript</button></li>
                 </ul>
+
+                <TestComponent whatever="this is" />
 
                 <BarChart />
                 {/* <ExperienceChart /> */}
