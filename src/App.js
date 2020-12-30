@@ -54,19 +54,6 @@ class App extends Component {
             evt.target.classList.remove('sel');
         else
             evt.target.classList.add('sel');
-        switch(evt.target.textContent) {
-            case 'JavaScript': 
-                console.log('js');
-                break;
-            case 'PHP': 
-                console.log('php');
-                break;
-            case 'CSS':
-                console.log('css');
-                break;
-            default:
-                console.log('none selected');
-        }
     }
 
     render() {
