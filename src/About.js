@@ -15,7 +15,8 @@ export default class About extends Component {
                         &nbsp;<a href="https://www.gallup.com/cliftonstrengths/en/252323/restorative-theme.aspx" target="_blank" rel="noreferrer">Restorative</a>, 
                         &nbsp;<a href="https://www.gallup.com/cliftonstrengths/en/252350/strategic-theme.aspx" target="_blank" rel="noreferrer">Strategic</a>
                     </li>
-                    <li>Enneagram: <a href="https://www.enneagraminstitute.com/type-9" target="_blank" rel="noreferrer">Type 9 - The Peacemaker</a></li>
+                    <li>Enneagram: <a href="https://www.enneagraminstitute.com/type-9" target="_blank" rel="noreferrer">Type 9 - The Peacemaker</a>&nbsp;|&nbsp;  
+            <a href="https://www.enneagraminstitute.com/type-7" target="_blank" rel="noreferrer">Type 7 - The Enthusiast</a></li>
                     <li>
                         DiSC Assessment:
                         <br />Highest dimension: <a href="https://www.discprofiles.com/blog/2019/08/what-is-the-disc-sc-style/" target="_blank" rel="noreferrer">Steadiness and Conscientiousness</a>

@@ -1,31 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Job from "./Job";
-// import { firestore } from "./firebase";
 
 
-const WorkExperience = () => {
-    const [jobs, setJobs] = useState([]);
+const WorkExperience = (props) => {
 
-    function fetchData() {
-        fetch('jobject.json', {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }).then( response => {
-            return response.json();
-        }).then( myJson => {
-            setJobs(myJson.jobs.map( job => {
-                return <Job key={job.key} {...job} />;
-            }));
-        });
-    }
-
-    useEffect( () => {
-        fetchData();
-    }, []);
+    console.log(props.filteredJobs);
 
     return (
         <section className="work-experience">
-            {jobs}
+            {props.filteredJobs.map( (job, idx) => {
+                console.log(job);
+                return(<Job key={idx} {...job} />)
+            })}
         </section>
     );
 }

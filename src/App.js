@@ -1,23 +1,35 @@
 import React, { Component } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
-import BarChart from "./BarChart";
-// import ExperienceChart from "./ExperienceChart";
-// import TestComponent from './TestComponent.class';
-import TestComponent from './TestComponent.func';
 
 class App extends Component {
 
-    getStuff() {
-        fetch('http://localhost:5000/jobs').then( (res) => {
-            return res.json();
-        }).then( (jsonData) => {
-            console.log(jsonData);
+    fetchData() {
+        fetch('jobject.json', {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }).then( response => {
+            return response.json();
+        }).then( myJson => {
+            console.log(myJson.jobs);
+            let re = new RegExp(/javascript/, 'i');
+            let jobs = myJson.jobs.filter( j => {
+                if(re.test(j.description)) {
+                    return j;
+                }
+                return false;
+            });
+            console.log(jobs);
+            return <WorkExperience stuff={jobs} />;
         });
     }
 
+    filteredJobs() {
+        return [];
+    }
+
     componentDidMount() {
-        this.getStuff();
+        this.fetchData();
     }
 
     toTop() {
@@ -38,13 +50,22 @@ class App extends Component {
     }
 
     highlightRelevant(evt) {
+        if(evt.target.classList.contains('sel'))
+            evt.target.classList.remove('sel');
+        else
+            evt.target.classList.add('sel');
         switch(evt.target.textContent) {
-            case 'JavaScript': console.log('js');
+            case 'JavaScript': 
+                console.log('js');
                 break;
-            case 'PHP': console.log('php');
+            case 'PHP': 
+                console.log('php');
+                break;
+            case 'CSS':
+                console.log('css');
                 break;
             default:
-                console.log('css');
+                console.log('none selected');
         }
     }
 
@@ -63,11 +84,7 @@ class App extends Component {
                     <li><button className='linkish' onClick={ this.highlightRelevant }>JavaScript</button></li>
                 </ul>
 
-                <TestComponent whatever="this is" />
-
-                <BarChart />
-                {/* <ExperienceChart /> */}
-                <WorkExperience />
+                <WorkExperience filteredJobs={ this.filteredJobs() }/>
 
                 <About />
 

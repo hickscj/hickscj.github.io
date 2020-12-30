@@ -47,14 +47,23 @@ body {
     }
 }
 
+
 button.linkish {
     border: none;
     background: none;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    padding: 0;
-    margin: 0;
+    &:last-of-type {
+        border-left: 1px dashed $border;
+    }
+    border-right: 1px dashed $border;
+    float: right;
+    padding: 0px 7px;
+    &.sel {
+        background: $mint-green;
+        color: $background;
+    }
 }
 
 #myResume {
@@ -83,14 +92,6 @@ button.linkish {
         margin: 5px 0 40px 15px;
         padding: 10px 0;
         list-style-type: none;
-        li {
-            &:last-of-type {
-                border-left: 1px dashed $border;
-            }
-            border-right: 1px dashed $border;
-            float: right;
-            padding: 0px 7px;
-        }
     }
     .tags {
         margin: 5px 0 40px 15px;
