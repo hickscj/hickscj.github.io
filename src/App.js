@@ -11,21 +11,10 @@ class App extends Component {
         }).then( response => {
             return response.json();
         }).then( myJson => {
-            console.log(myJson.jobs);
             let re = new RegExp(/javascript/, 'i');
-            let jobs = myJson.jobs.filter( j => {
-                if(re.test(j.description)) {
-                    return j;
-                }
-                return false;
-            });
-            console.log(jobs);
-            return <WorkExperience stuff={jobs} />;
+            let jobs = myJson.jobs.filter( j => re.test(j.description) ? j : false );
+            return <WorkExperience jobs={jobs} />
         });
-    }
-
-    filteredJobs() {
-        return [];
     }
 
     componentDidMount() {
@@ -64,14 +53,14 @@ class App extends Component {
                     <h2>Chad Hicks</h2>
                 </header>
 
-                <ul className="specialties">
+                <ul id="specialties">
                     <li><button className='linkish' onClick={ this.toAbout }>About Me</button></li>
                     <li><button className='linkish' onClick={ this.highlightRelevant }>CSS</button></li>
                     <li><button className='linkish' onClick={ this.highlightRelevant }>PHP</button></li>
                     <li><button className='linkish' onClick={ this.highlightRelevant }>JavaScript</button></li>
                 </ul>
 
-                <WorkExperience filteredJobs={ this.filteredJobs() }/>
+                {/* <WorkExperience jobs={ this.jobs }/> */}
 
                 <About />
 

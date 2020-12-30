@@ -6,7 +6,7 @@ const WorkExperience = (props) => {
 
     return (
         <section className="work-experience">
-            {props.filteredJobs.map( (job, idx) => {
+            {props.jobs.map( (job, idx) => {
                 return(<Job key={idx} {...job} />)
             })}
         </section>
