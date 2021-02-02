@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
+import Skills from "./Skills";
 // import FilterButton from "./FilterButton";
 
 const App = () => {
@@ -67,6 +68,8 @@ const App = () => {
                 <img className="face" src="../img/chad_hicks.jpg" alt="" />
                 <h2>Chad Hicks</h2>
             </header>
+
+            <Skills />
 
             <ul id="specialties">
                 <li><button className='linkish' onClick={ toAbout }>About Me</button></li>
