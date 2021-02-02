@@ -1,27 +1,28 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
+// import FilterButton from "./FilterButton";
 
-class App extends Component {
+const App = () => {
+    const [jobs, setJobs] = useState([]);
+    // const [filter, setFilter] = useState([]);
+    // const specialties = ['JavaScript','CSS','PHP'];
 
-    fetchData() {
+    useEffect(() => {
         fetch('jobject.json', {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         }).then( response => {
             return response.json();
         }).then( myJson => {
-            let re = new RegExp(/javascript/, 'i');
-            let jobs = myJson.jobs.filter( j => re.test(j.description) ? j : false );
-            return <WorkExperience jobs={jobs} />
+            // let filters = filter.join('|');
+            // let re = new RegExp(`${filters}`, 'i');
+            // setJobs(myJson.jobs.filter( j => re.test(j.description) ? j : false ));
+            setJobs(myJson.jobs)
         });
-    }
+    }, []);
 
-    componentDidMount() {
-        this.fetchData();
-    }
-
-    toTop() {
+    function toTop() {
         window.scrollTo({
             top: 0,
             left: 0,
@@ -29,7 +30,7 @@ class App extends Component {
         });
     }
 
-    toAbout() {
+    function toAbout() {
         let coords = document.getElementById('about').getBoundingClientRect();
         window.scrollTo({
             top: coords.top,
@@ -38,38 +39,52 @@ class App extends Component {
         });
     }
 
-    highlightRelevant(evt) {
-        if(evt.target.classList.contains('sel'))
-            evt.target.classList.remove('sel');
-        else
-            evt.target.classList.add('sel');
-    }
+    // const highlightRelevant = (evt) => {
+    //     let selected = document.getElementsByClassName('sel');
+    //     let selText = [];
+    //     if(evt.target.textContent === 'All' && !evt.target.classList.contains('sel')) {
+    //         setFilter([]);
+    //         for(let s of selected) {
+    //             if(s.classList.contains('sel') && s.textContent !== 'All') s.classList.remove('sel');        
+    //         }
+    //     } else {
+    //         for(let s of selected) {
+    //             selText.push(s.textContent);
+    //         }
+    //         setFilter(selText);
+    //     }
+    //     if(evt.target.classList.contains('sel')) {
+    //         evt.target.classList.remove('sel');
+    //     } else {
+    //         evt.target.classList.add('sel');
+    //     }
+    // };
 
-    render() {
-        return (
-            <div id="myResume">
-                <header>
-                    <img className="face" src="../img/chad_hicks.jpg" alt="" />
-                    <h2>Chad Hicks</h2>
-                </header>
+    return (
+        <React.StrictMode>
+        <div id="myResume">
+            <header>
+                <img className="face" src="../img/chad_hicks.jpg" alt="" />
+                <h2>Chad Hicks</h2>
+            </header>
 
-                <ul id="specialties">
-                    <li><button className='linkish' onClick={ this.toAbout }>About Me</button></li>
-                    <li><button className='linkish' onClick={ this.highlightRelevant }>CSS</button></li>
-                    <li><button className='linkish' onClick={ this.highlightRelevant }>PHP</button></li>
-                    <li><button className='linkish' onClick={ this.highlightRelevant }>JavaScript</button></li>
-                </ul>
+            <ul id="specialties">
+                <li><button className='linkish' onClick={ toAbout }>About Me</button></li>
+                {/*specialties.map( s => {
+                    return <li key={s}><FilterButton action={highlightRelevant} text={s} /></li>;
+                })*/}
+            </ul>
 
-                {/* <WorkExperience jobs={ this.jobs }/> */}
+            <WorkExperience jobs={ jobs }/>
 
-                <About />
+            <About />
 
-                <button id="to-top" onClick={ this.toTop }>^</button>
-                <img id="grandmas" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
-            </div>
-        );
-    }
-}
+            <button id="to-top" onClick={ toTop }>^</button>
+            <img id="grandmas" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+        </div>
+        </React.StrictMode>
+    );
+};
 
 export default App;
 
