@@ -47,13 +47,13 @@ body {
     }
 }
 
-
 button.linkish {
     border: none;
     background: none;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    outline: none;
     &:last-of-type {
         border-left: 1px dashed $border;
     }
@@ -67,27 +67,47 @@ button.linkish {
 }
 
 #myResume {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
     max-width: 800px;
     padding-bottom: 40px;
     header {
-        // border-bottom: 1px solid $border;
-        height: 75px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 110px 1fr 1fr;
         padding-bottom: 10px;
         h2 {
             font-family: 'Mate SC', sans-serif;
             font-size: 3em;
-            margin-bottom: 0;
+            font-weight: normal;
+            margin: 32px 0;
+        }
+        .info {
+            background-color: $persian-blue;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            font-family: serif;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 5px 15px;
+            margin: 10px 10px;
         }
         .face {
             border: 1px solid $border;
             border-radius: 50px;
-            float: left;
-            margin: -5px 20px 10px 0;
+            margin: 25px 20px 10px 0;
             width: 5em;
         }
     }
+    .skills-verbose { }
     #specialties {
         margin: 5px 0 40px 15px;
         padding: 10px 0;
@@ -146,7 +166,9 @@ button.linkish {
         border: none;
         color: white;
         font-size: 40px;
-        padding-top: 13px;
+        outline: none;
+        padding-top: 10px;
+        cursor: pointer;
         position: fixed;
         bottom: 15px;
         right: 10px;

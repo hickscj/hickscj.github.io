@@ -11,8 +11,8 @@ const Skills = () => {
     return (
         <div>
             <BarChart
-            width={500}
-            height={400}
+            width={400}
+            height={200}
             data={data}
             margin={{ top: 5, right: 20, left: 45, bottom: 5 }}
             >
@@ -20,7 +20,6 @@ const Skills = () => {
             <Tooltip />
             {/* <CartesianGrid stroke="#ccc" /> */}
             <Bar type="monotone" dataKey="years" fill="#ff7300" yAxisId={0} />
-            <Bar type="monotone" dataKey="proficiency" fill="#197278" yAxisId={0} />
             </BarChart>
         </div>
     );
