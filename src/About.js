@@ -23,7 +23,6 @@ export default class About extends Component {
                         <br />Segment Number: D 2 i 4 S 5 C 5
                         <br />Classical Pattern: <a href="https://www.discprofiles4u.com/blog/2012/disc-classic-2-perfectionist-pattern-15-of-16/" target="_blank" rel="noreferrer">Perfectionist</a>
                     </li>
-                    <li>Meyers-Briggs: <a href="https://www.verywellmind.com/enfp-an-overview-of-the-champion-personality-type-2795980" target="_blank" rel="noreferrer">ENFP</a></li>
                 </ul>
             </section>
         );  
