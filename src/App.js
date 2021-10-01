@@ -64,7 +64,7 @@ const App = () => {
 
     return (
         <React.StrictMode>
-        <div className="container mx-auto">
+        <div id="myResume" className="container mx-auto">
             <header>
                 <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
                 <h2>Chad Hicks</h2>
