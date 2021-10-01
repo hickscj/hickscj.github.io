@@ -69,7 +69,10 @@ const App = () => {
                 <img className="face" src="../img/chad_hicks.jpg" alt="" />
                 <h2>Chad Hicks</h2>
                 <div>
-                <button className="info" onClick={ toAbout }>i</button>
+                {/*<button className="info" onClick={ toAbout }>i</button>*/}
+                    <ul id="specialties">
+                        <li><button onClick={ toAbout }>About Me</button></li>
+                    </ul>
                 </div>
             </header>
 {/*
