@@ -64,17 +64,28 @@ const App = () => {
 
     return (
         <React.StrictMode>
-        <div id="myResume">
+        <div className="container mx-auto">
             <header>
-                <img className="face" src="../img/chad_hicks.jpg" alt="" />
+                <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
                 <h2>Chad Hicks</h2>
                 <div>
                 {/*<button className="info" onClick={ toAbout }>i</button>*/}
-                    <ul id="specialties">
-                        <li><button onClick={ toAbout }>About Me</button></li>
-                    </ul>
+                    <button onClick={ toAbout }>About Me</button>
                 </div>
             </header>
+
+            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">img</div>
+                    <div className="p-8">
+                        <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                        <a href="/" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding
+                            customers for your new business</a>
+                        <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work.
+                            Here are five ideas you can use to find your first customers.</p>
+                    </div>
+                </div>
+            </div>
 {/*
             <ul id="specialties">
                 <li><button className='linkish' onClick={ toAbout }>About Me</button></li>

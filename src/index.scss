@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* based off FF8200 */
 
 /* SCSS HEX */
@@ -174,7 +178,7 @@ button.linkish {
         color: white;
         font-size: 40px;
         outline: none;
-        padding-top: 10px;
+        padding-top: 1px;
         cursor: pointer;
         position: fixed;
         bottom: 15px;
