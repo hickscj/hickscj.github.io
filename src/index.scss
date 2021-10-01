@@ -84,6 +84,7 @@ button.linkish {
         grid-template-columns: 110px 1fr 1fr;
         padding-bottom: 10px;
         h2 {
+            cursor: pointer;
             font-family: 'Mate SC', sans-serif;
             font-size: 3em;
             font-weight: normal;
@@ -106,19 +107,19 @@ button.linkish {
             margin: 25px 20px 10px 0;
             width: 5em;
         }
+        .about {
+            border: none;
+            background: none;
+            font-family: "Mate SC", sans-serif;
+            font-size: 20px;
+            user-select: none;
+        }
     }
     .skills-verbose { }
     #specialties {
         margin: 5px 0 40px 15px;
         padding: 10px 0;
         list-style-type: none;
-        button {
-            border: none;
-            background: none;
-            font-family: "Raleway", sans-serif;
-            font-size: 60px;
-            user-select: none;
-        }
     }
     .tags {
         margin: 5px 0 40px 15px;
