@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
 //import Skills from "./Skills";
-import SkillsVerbose from "./SkillsVerbose";
+// import SkillsVerbose from "./SkillsVerbose";
 // import FilterButton from "./FilterButton";
 
 const App = () => {
@@ -81,7 +81,7 @@ const App = () => {
             </ul>
 */}
 
-            <SkillsVerbose />
+            {/*<SkillsVerbose />*/}
 
             <WorkExperience jobs={ jobs }/>
 
