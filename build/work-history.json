@@ -1,0 +1,56 @@
+[
+    {
+        "jobs": [
+            {
+                "dates": "2020",
+                "description": "Worked on PHP sites built with Laravel and Drupal, and dynamic animations using SVG, SCSS, and JavaScript.",
+                "title": "Senior Developer (Contract) at Area 23"
+            },
+            {
+                "dates": "2019",
+                "description": "Updated and maintained several websites built on legacy versions of the PHP framework CodeIgniter. Front-end development with JavaScript and CSS.",
+                "title": "Software Engineer (Contract) at Code Pros"
+            },
+            {
+                "dates": "2015 - 2019",
+                "description": "Full stack development of a text messaging system for customer service at hotels and malls. Worked on sending of dynamic surveys and automated responses to guest feedback. JavaScript, CoffeeScript, CSS, PHP.",
+                "title": "Senior Software Engineer at Kipsu"
+            },
+            {
+                "dates": "2014 - 2015",
+                "description": "Rebranded our software according to brand recommendations from outside design/marketing company. Worked with HTML, CSS (SASS), and Javascript (Dojo) to implement new UI/UX designs. Progressively developed feature enhancements for each new software release.",
+                "title": "Software Engineer at Calabrio"
+            },
+            {
+                "dates": "2013 - 2014",
+                "description": "Created a mobile app with a REST API using Ember.js and Phonegap. Collaborated on the development of a new version of Aeris API using Backbone.js.",
+                "title": "Front End Developer at Media Logic Group"
+            },
+            {
+                "dates": "2011 - 2013",
+                "description": "Managed 7 websites associated with the University of Missouri Bond Life Sciences Center using PHP with Oracle. Coordinated development of new features and implementations while keeping information current. Consulted for marketing and communications plans.",
+                "title": "Programmer/Analyst at MU Life Sciences"
+            },
+            {
+                "dates": "2008 - 2011",
+                "description": "Managed the websites and online services for Campus Dining at the University of Missouri. Brainstormed marketing initiatives and campaigns with the marketing team and CDS leadership. Implemented new designs for the website and posted menus. Started the Campus Dining Services Twitter account.",
+                "title": "Web Developer at MU Campus Dining Services"
+            },
+            {
+                "dates": "2007 - 2009",
+                "description": "Oversaw baristas at high-ranked regional coffee chain and roastery in Missouri. Customer service, making food and drinks, and accounts tallying at shift end. Developed relationships across branches of the regional chain and assisted with process improvements.",
+                "title": "Barista and Shift Lead - Kaldi's Coffee"
+            },
+            {
+                "dates": "2006 - 2007",
+                "description": "Managed customer database records and updated information. Ran production line for oral suspension solution. Answered questions regarding the product from parents, pharmacists, and doctors to help promote understanding of the treatment of pediatric GERD and EER (acid reflux diseases).",
+                "title": "Product Coordinator - Reflux Solutions"
+            },
+            {
+                "dates": "2000 - 2005",
+                "description": "Oversaw baristas and served customers at local coffeehouse in Arkansas. Made bank deposits and recorded nightly totals. Built relationships with community leaders and regular customers.",
+                "title": "Barista and Shift Lead - Midnight Oil Coffeehouse"
+            }
+        ]
+    }
+]
