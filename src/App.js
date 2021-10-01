@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
-import Skills from "./Skills";
+//import Skills from "./Skills";
+import SkillsVerbose from "./SkillsVerbose";
 // import FilterButton from "./FilterButton";
 
 const App = () => {
@@ -66,17 +67,21 @@ const App = () => {
         <div id="myResume">
             <header>
                 <img className="face" src="../img/chad_hicks.jpg" alt="" />
-                <h2>Chad Hicks</h2>
+                <h2 onClick={ toAbout }>Chad Hicks</h2>
+                {/*<div>*/}
+                {/*    <button className="about" onClick={ toAbout }>Bio</button>*/}
+                {/*</div>*/}
             </header>
-
-            <Skills />
-
+{/*
             <ul id="specialties">
                 <li><button className='linkish' onClick={ toAbout }>About Me</button></li>
-                {/*specialties.map( s => {
+                specialties.map( s => {
                     return <li key={s}><FilterButton action={highlightRelevant} text={s} /></li>;
-                })*/}
+                })
             </ul>
+*/}
+
+            <SkillsVerbose />
 
             <WorkExperience jobs={ jobs }/>
 
