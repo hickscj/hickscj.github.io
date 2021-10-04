@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* based off FF8200 */
 
 /* SCSS HEX */
@@ -111,34 +107,10 @@ button.linkish {
             width: 5em;
         }
     }
-    .skills-verbose { }
-    #specialties {
-        margin: 5px 0 40px 15px;
-        padding: 10px 0;
-        list-style-type: none;
-        button {
-            border: none;
-            background: none;
-            font-family: "Raleway", sans-serif;
-            font-size: 60px;
-            user-select: none;
-        }
-    }
-    .tags {
-        margin: 5px 0 40px 15px;
-        list-style-type: none;
-        li {
-            border-radius: 5px;
-            float: left;
-            margin: 5px;
-            padding: 5px;
-        }
-    }
     section {
         margin-bottom: 30px;
         &.work-experience {
             clear: right;
-            margin-top: 2em;
             .job {
                 border-bottom: 1px solid $border;
                 margin: 10px 0;
