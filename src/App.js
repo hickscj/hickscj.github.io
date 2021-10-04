@@ -45,6 +45,7 @@ const App = () => {
                 <ul className="p-4">
                     <li><a href="/" onClick={ toAbout }>About Me</a></li>
                     <li><a href="https://github.com/hickscj">GitHub</a></li>
+                    <li><a href="../resources/chad.hicks_Oct2021.pdf">Resume</a></li>
                 </ul>
             </header>
 
