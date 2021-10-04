@@ -7,7 +7,9 @@ const WorkExperience = (props) => {
     return (
         <section className="work-experience">
             {props.jobs.map( (job, idx) => {
-                return(<Job key={idx} {...job} />)
+                if (idx < 5) {
+                    return(<Job key={idx} {...job} />)
+                }
             })}
         </section>
     );
