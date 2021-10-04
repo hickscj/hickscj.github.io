@@ -4,9 +4,9 @@ export default class About extends Component {
     render() {
         return (
             <section id="about">
-                <h3>About</h3>
+                <h3 className="text-xl font-bold pb-1">About</h3>
                 <p>I am a Software Engineer who loves science, the outdoors, and learning new things. I&apos;m also interested in psychology and productivity.</p>
-                <h3>Personality and Disposition</h3>
+                <h3 className="text-xl font-bold pt-5 pb-1">Personality and Disposition</h3>
                 <ul>
                     <li>Strengths Finder: 
                         &nbsp;<a href="https://www.gallup.com/cliftonstrengths/en/252278/input-theme.aspx" target="_blank" rel="noreferrer">Input</a>, 

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
-//import Skills from "./Skills";
-// import SkillsVerbose from "./SkillsVerbose";
-// import FilterButton from "./FilterButton";
+import './tailwind.gen.css';
 
 const App = () => {
     const [jobs, setJobs] = useState([]);
@@ -13,18 +11,14 @@ const App = () => {
     useEffect(() => {
         fetch('jobject.json', {
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
         }).then( response => {
             return response.json();
         }).then( myJson => {
-            // let filters = filter.join('|');
-            // let re = new RegExp(`${filters}`, 'i');
-            // setJobs(myJson.jobs.filter( j => re.test(j.description) ? j : false ));
             setJobs(myJson.jobs)
         });
     }, []);
 
-    function toTop() {
+    const toTop = () => {
         window.scrollTo({
             top: 0,
             left: 0,
@@ -32,7 +26,8 @@ const App = () => {
         });
     }
 
-    function toAbout() {
+    const toAbout = (e) => {
+        e.preventDefault();
         let coords = document.getElementById('about').getBoundingClientRect();
         window.scrollTo({
             top: coords.top,
@@ -41,54 +36,25 @@ const App = () => {
         });
     }
 
-    // const highlightRelevant = (evt) => {
-    //     let selected = document.getElementsByClassName('sel');
-    //     let selText = [];
-    //     if(evt.target.textContent === 'All' && !evt.target.classList.contains('sel')) {
-    //         setFilter([]);
-    //         for(let s of selected) {
-    //             if(s.classList.contains('sel') && s.textContent !== 'All') s.classList.remove('sel');        
-    //         }
-    //     } else {
-    //         for(let s of selected) {
-    //             selText.push(s.textContent);
-    //         }
-    //         setFilter(selText);
-    //     }
-    //     if(evt.target.classList.contains('sel')) {
-    //         evt.target.classList.remove('sel');
-    //     } else {
-    //         evt.target.classList.add('sel');
-    //     }
-    // };
-
     return (
         <React.StrictMode>
-        <div id="myResume">
+        <div id="myResume" className="container mx-auto">
             <header>
-                <img className="face" src="../img/chad_hicks.jpg" alt="" />
-                <h2 onClick={ toAbout }>Chad Hicks</h2>
-                {/*<div>*/}
-                {/*    <button className="about" onClick={ toAbout }>Bio</button>*/}
-                {/*</div>*/}
+                <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
+                <h2 className="select-none">Chad Hicks</h2>
+                <ul className="p-4">
+                    <li><a href="/" onClick={ toAbout }>About Me</a></li>
+                    <li><a href="https://github.com/hickscj">GitHub</a></li>
+                    <li><a href="../resources/chad.hicks_Oct2021.pdf">Resume</a></li>
+                </ul>
             </header>
-{/*
-            <ul id="specialties">
-                <li><button className='linkish' onClick={ toAbout }>About Me</button></li>
-                specialties.map( s => {
-                    return <li key={s}><FilterButton action={highlightRelevant} text={s} /></li>;
-                })
-            </ul>
-*/}
-
-            {/*<SkillsVerbose />*/}
 
             <WorkExperience jobs={ jobs }/>
 
             <About />
 
             <button id="to-top" onClick={ toTop }>^</button>
-            <img id="grandmas" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
         </div>
         </React.StrictMode>
     );
