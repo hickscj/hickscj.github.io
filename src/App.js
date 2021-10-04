@@ -42,9 +42,10 @@ const App = () => {
             <header>
                 <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
                 <h2 className="select-none">Chad Hicks</h2>
-                <div className="p-4">
-                    <a href="/" onClick={ toAbout }>About Me</a>
-                </div>
+                <ul className="p-4">
+                    <li><a href="/" onClick={ toAbout }>About Me</a></li>
+                    <li><a href="https://github.com/hickscj">GitHub</a></li>
+                </ul>
             </header>
 
             <WorkExperience jobs={ jobs }/>
