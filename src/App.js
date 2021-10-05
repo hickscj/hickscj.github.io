@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
-import './tailwind.gen.css';
+import './tailwind.css';
+import './index.scss';
 
 const App = () => {
     const [jobs, setJobs] = useState([]);
-    // const [filter, setFilter] = useState([]);
-    // const specialties = ['JavaScript','CSS','PHP'];
 
     useEffect(() => {
         fetch('jobject.json', {
