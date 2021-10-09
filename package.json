@@ -8,11 +8,14 @@
     "dotenv": "^8.2.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-redux": "^7.2.5",
     "react-scripts": "^4.0.2",
-    "recharts": "^2.0.4"
+    "recharts": "^2.0.4",
+    "redux": "^4.1.1"
   },
   "homepage": "",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "craco start",
     "build": "craco build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +39,8 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "immer": "^9.0.6",
+    "set-value": "^4.0.1",
     "postcss": "^7.0.39",
     "prettier": "^2.1.2",
     "sass": "^1.28.0",
@@ -52,5 +57,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "immer": "^9.0.6",
+    "set-value": "^4.0.1"
   }
 }
