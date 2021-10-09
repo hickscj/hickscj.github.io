@@ -1,12 +1,13 @@
 import React from "react";
 import Job from "./Job";
+import { connect } from "react-redux";
 
 
-const WorkExperience = (props) => {
+const WorkExperience = ({ jobs = [] }) => {
 
     return (
         <section className="work-experience">
-            {props.jobs.map( (job, idx) => {
+            {jobs.map( (job, idx) => {
                 if (idx < 5) {
                     return(<Job key={idx} {...job} />)
                 }
@@ -15,4 +16,8 @@ const WorkExperience = (props) => {
     );
 }
 
-export default WorkExperience;
+const mapStateToProps = state => ({
+    jobs: state.jobs,
+});
+
+export default connect(mapStateToProps)(WorkExperience);
