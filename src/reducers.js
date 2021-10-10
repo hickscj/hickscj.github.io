@@ -1,14 +1,24 @@
-import {CREATE_JOB, LOAD_JOBS_SUCCESS} from "./actions";
+import {
+    CREATE_JOB,
+    LOAD_JOBS_SUCCESS
+} from "./actions";
 
-export const jobs = (state = [], action) => {
-    const { type } = action;
+const initialState = { isLoading: false, data: [] };
+
+export const jobs = (state = initialState, action) => {
+    const { type, payload } = action;
 
     switch (type) {
         case CREATE_JOB: {
             return state;
         }
         case LOAD_JOBS_SUCCESS: {
-            return state;
+            const { jobs } = payload;
+            return {
+                ...state,
+                isLoading: false,
+                data: jobs
+            }
         }
         default: {
             return state;

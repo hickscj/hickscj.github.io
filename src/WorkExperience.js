@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Job from "./Job";
 import { connect } from "react-redux";
+import { loadJobs } from "./thunks";
+import { getJobs } from "./selectors";
+// import {loadJobsSuccess} from "./actions";
 
-
-const WorkExperience = ({ jobs = [] }) => {
+const WorkExperience = ({ jobs, startLoadingJobs }) => {
+    useEffect(() => {
+        startLoadingJobs()
+    });
 
     return (
         <section className="work-experience">
-            {jobs.map( (job, idx) => {
+            {Array.from(jobs).map( (job, idx) => {
                 if (idx < 5) {
                     return(<Job key={idx} {...job} />)
                 }
@@ -17,7 +22,11 @@ const WorkExperience = ({ jobs = [] }) => {
 }
 
 const mapStateToProps = state => ({
-    jobs: state.jobs,
+    jobs: getJobs(state),
 });
 
-export default connect(mapStateToProps)(WorkExperience);
+const mapDispatchToProps = dispatch => ({
+    startLoadingJobs: () => dispatch(loadJobs()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(WorkExperience);
