@@ -12,7 +12,7 @@ const WorkExperience = ({ jobs, startLoadingJobs }) => {
 
     return (
         <section className="work-experience">
-            {Array.from(jobs).map( (job, idx) => {
+            {Array.from(jobs).sort((a, b) => b.key - a.key).map( (job, idx) => {
                 if (idx < 5) {
                     return(<Job key={idx} {...job} />)
                 }
