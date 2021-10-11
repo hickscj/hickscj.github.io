@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import WorkExperience from "./WorkExperience";
 import About from "./About";
 import './tailwind.css';
@@ -6,17 +6,6 @@ import './index.scss';
 import {Header} from "./Header";
 
 const App = () => {
-    const [jobs, setJobs] = useState([]);
-
-    useEffect(() => {
-        fetch('jobject.json', {
-            'Content-Type': 'application/json',
-        }).then( response => {
-            return response.json();
-        }).then( myJson => {
-            setJobs(myJson.jobs)
-        });
-    }, []);
 
     const toTop = () => {
         window.scrollTo({
@@ -41,7 +30,7 @@ const App = () => {
         <div id="myResume" className="container mx-auto">
             <Header toAbout={ toAbout } />
 
-            <WorkExperience jobs={ jobs }/>
+            <WorkExperience />
 
             <About />
 
