@@ -9,7 +9,7 @@ export const loadJobs = () => async (dispatch) => {
     try {
         dispatch(loadJobsInProgress());
         const response = await fetch('jobject.json');
-        const jobs = await response.json();
+        const data = await response.json();
         // const response = await collection(db, 'jobs');
         // const jobs = await getDocs(response);
 
@@ -20,9 +20,9 @@ export const loadJobs = () => async (dispatch) => {
         // }).then(jobs => {
         //     dispatch(loadJobsSuccess(jobs));
         // });
-        dispatch(loadJobsSuccess(jobs));
+        dispatch(loadJobsSuccess(data.jobs));
     } catch (e) {
-        alert(`Error loading from firebase... ${e}`);
+        alert(`Error loading job data... ${e}`);
     }
 };
 

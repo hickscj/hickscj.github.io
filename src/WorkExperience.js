@@ -8,7 +8,7 @@ import { getJobs } from "./selectors";
 const WorkExperience = ({ jobs, startLoadingJobs }) => {
     useEffect(() => {
         startLoadingJobs()
-    });
+    }, []);
 
     return (
         <section className="work-experience">
