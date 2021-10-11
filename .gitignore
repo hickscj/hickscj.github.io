@@ -5,5 +5,3 @@ coverage/
 .env
 .idea/
 .eslintcache
-src/firebase-config.js
-
