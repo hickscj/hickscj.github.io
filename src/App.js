@@ -1,9 +1,9 @@
 import React from "react";
-import WorkExperience from "./WorkExperience";
-import About from "./About";
-import './tailwind.css';
-import './index.scss';
-import {Header} from "./Header";
+import WorkExperience from "./components/WorkExperience";
+import About from "./components/About";
+import './styles/tailwind.css';
+import './styles/index.scss';
+import {Header} from "./components/Header";
 
 const App = () => {
 

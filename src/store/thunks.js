@@ -2,7 +2,7 @@ import {
     loadJobsInProgress,
     loadJobsSuccess
 } from "./actions";
-import db from './firebase-config';
+import db from '../firebase-config';
 
 export const loadJobs = () => async (dispatch) => {
     try {

@@ -1,14 +1,14 @@
 import React, {useEffect} from "react";
 import Job from "./Job";
 import { connect } from "react-redux";
-import { loadJobs } from "./thunks";
-import { getJobs } from "./selectors";
+import { loadJobs } from "../store/thunks";
+import { getJobs } from "../store/selectors";
 // import {loadJobsSuccess} from "./actions";
 
 const WorkExperience = ({ jobs, startLoadingJobs }) => {
     useEffect(() => {
         startLoadingJobs()
-    }, []);
+    }, [startLoadingJobs]);
 
     return (
         <section className="work-experience">
