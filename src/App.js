@@ -30,12 +30,14 @@ const App = () => {
         <div id="myResume" className="container mx-auto">
             <Header toAbout={ toAbout } />
 
+            <img className="pt-2 pb-10" src={ "../img/snail.png" } alt="Snail on the road" />
+
             <WorkExperience />
 
             <About />
 
-            <button id="to-top" onClick={ toTop }>^</button>
             <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            <button id="to-top" onClick={ toTop }>^</button>
         </div>
         </React.StrictMode>
     );

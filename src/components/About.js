@@ -5,7 +5,9 @@ export default class About extends Component {
         return (
             <section id="about">
                 <h3 className="text-xl font-bold pb-1">About</h3>
-                <p>I am a Software Engineer who loves science, the outdoors, and learning new things. I&apos;m also interested in psychology and productivity.</p>
+                <p>I am a Software Engineer who loves science, the outdoors, and learning new things. I&apos;m also interested in psychology and productivity.
+                    When I&apos;m not coding, you can find me running or biking along the Hudson, playing with my kid in the park, reading something, watching sci-fi, or playing music.
+                </p>
                 <h3 className="text-xl font-bold pt-5 pb-1">Personality and Disposition</h3>
                 <ul>
                     <li>Strengths Finder: 
@@ -19,9 +21,11 @@ export default class About extends Component {
             <a href="https://www.enneagraminstitute.com/type-7" target="_blank" rel="noreferrer">Type 7 - The Enthusiast</a></li>
                     <li>
                         DiSC Assessment:
-                        <br />Highest dimension: <a href="https://www.discprofiles.com/blog/2019/08/what-is-the-disc-sc-style/" target="_blank" rel="noreferrer">Steadiness and Conscientiousness</a>
-                        <br />Segment Number: D 2 i 4 S 5 C 5
-                        <br />Classical Pattern: <a href="https://www.discprofiles4u.com/blog/2012/disc-classic-2-perfectionist-pattern-15-of-16/" target="_blank" rel="noreferrer">Perfectionist</a>
+                        <ul className="pl-5">
+                            <li>Highest dimension: <a href="https://www.discprofiles.com/blog/2019/08/what-is-the-disc-sc-style/" target="_blank" rel="noreferrer">Steadiness and Conscientiousness</a></li>
+                            <li>Segment Number: D 2 i 4 S 5 C 5</li>
+                            <li>Classical Pattern: <a href="https://www.discprofiles4u.com/blog/2012/disc-classic-2-perfectionist-pattern-15-of-16/" target="_blank" rel="noreferrer">Perfectionist</a></li>
+                        </ul>
                     </li>
                 </ul>
             </section>
