@@ -10,6 +10,11 @@ export const Header = (props) => {
                 <li><a href="https://github.com/hickscj">GitHub</a></li>
                 <li><a href="../resources/chad.hicks_Oct2021.pdf">Resume</a></li>
             </ul>
+            <div className="pt-1">
+                <img align="right"
+                    src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10"
+                    alt="hickscj" />
+            </div>
         </header>
     );
 }
