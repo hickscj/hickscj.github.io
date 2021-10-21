@@ -1,4 +1,9 @@
 {
+    "bio": {
+        "firstName": "Chad",
+        "lastName": "Hicks",
+        "summary": "human"
+    },
     "jobs": [
         {
             "key": 11,
