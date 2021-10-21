@@ -32,10 +32,10 @@ $cornsilk: hsla(49, 100%, 95%, 1);
 $dark-electric-blue: hsla(206, 19%, 41%, 1);
 $gamboge: hsla(39, 100%, 45%, 1);
 
-$text: $onyx; //#521b3b;
-$mint-green: hsla(145, 53%, 37%, 1); //#b0e7c7;
+$mint-green: hsla(145, 53%, 57%, 1); //#b0e7c7;
 
-$background: $mint-cream;
+$background: $onyx;
+$text: white; 
 
 $border: $onyx;
 
@@ -88,7 +88,7 @@ button.linkish {
     header {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 110px 1fr 1fr;
+        grid-template-columns: .6fr 2fr .7fr 1.5fr;
         padding-bottom: 10px;
         h2 {
             font-family: 'Mate SC', sans-serif;
