@@ -22,7 +22,7 @@ export default class About extends Component {
                     <li>
                         DiSC Assessment:
                         <ul className="pl-5">
-                            <li>Highest dimension: <a href="https://www.discprofiles.com/blog/2019/08/what-is-the-disc-sc-style/" target="_blank" rel="noreferrer">Steadiness and Conscientiousness</a></li>
+                            <li>Highest dimension: <a href="https://www.discprofiles4u.com/pages/disc-behavioral-styles" target="_blank" rel="noreferrer">Steadiness and Conscientiousness</a></li>
                             <li>Segment Number: D 2 i 4 S 5 C 5</li>
                             <li>Classical Pattern: <a href="https://www.discprofiles4u.com/blog/2012/disc-classic-2-perfectionist-pattern-15-of-16/" target="_blank" rel="noreferrer">Perfectionist</a></li>
                         </ul>
