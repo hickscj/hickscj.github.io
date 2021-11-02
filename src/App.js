@@ -30,8 +30,6 @@ const App = () => {
         <div id="myResume" className="container mx-auto">
             <Header toAbout={ toAbout } />
 
-            <img className="pt-2 pb-10" src={ "../img/snail.png" } alt="Snail on the road" />
-
             <WorkExperience />
 
             <About />
