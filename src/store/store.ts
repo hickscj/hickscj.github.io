@@ -5,24 +5,15 @@ import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 import persistReducer from "redux-persist/es/persistReducer";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { configureStore } from '@reduxjs/toolkit'
 
-const reducers = {
-    jobs,
-};
+const store = configureStore({
+    reducer: {
+        jobs,
+    },
+})
 
-const persistConfig = {
-    key: 'root',
-    storage,
-    stateReconciler: autoMergeLevel2,
-}
-
-const rootReducer = combineReducers(reducers);
-
-const persistedReducer = persistReducer(persistConfig, rootReducer);
-
-export const configureStore = () => createStore(
-    persistedReducer,
-    composeWithDevTools(
-        applyMiddleware(thunk)
-    )
-);
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch

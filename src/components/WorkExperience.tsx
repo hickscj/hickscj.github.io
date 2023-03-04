@@ -5,7 +5,12 @@ import { loadJobs } from "../store/thunks";
 import { getJobs } from "../store/selectors";
 // import {loadJobsSuccess} from "./actions";
 
-const WorkExperience = ({ jobs, startLoadingJobs }) => {
+type WorkExperienceProps = {
+    jobs: any,
+    startLoadingJobs: any,
+};
+
+function WorkExperience ({ jobs, startLoadingJobs }: WorkExperienceProps) {
     useEffect(() => {
         startLoadingJobs()
     }, [startLoadingJobs]);

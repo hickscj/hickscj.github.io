@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Header = (props) => {
+export const Header = (props: any) => {
     return (
         <header className="pt-5">
             <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
@@ -12,9 +12,7 @@ export const Header = (props) => {
                 <li><a href="../resources/chad.hicks_Oct2021_resume.docx">Resume (docx)</a></li>
             </ul>
             <div className="pt-1">
-                <img align="right"
-                    src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10"
-                    alt="hickscj" />
+                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10" alt="hickscj" />
             </div>
         </header>
     );

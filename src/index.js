@@ -1,17 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { persistStore } from "redux-persist";
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import { Provider } from 'react-redux';
-import { configureStore } from "./store/store";
 import App from "./App";
 import './styles/index.scss';
-
-const store = configureStore();
-const persistor = persistStore(store);
+import { RootState } from './store/store';
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store={RootState.store}>
         <PersistGate
             loading={<div>Loading...</div>}
             persistor={persistor}>
