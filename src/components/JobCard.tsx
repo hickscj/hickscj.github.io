@@ -1,6 +1,7 @@
 import React from "react";
+import { Job } from "../data/Job";
 
-const Job = ({ title, startDate, endDate, employer, description }) => {
+const JobCard = ({ title, startDate, endDate, employer, description }: Job) => {
     return (
         <div className="border border-gray-300 rounded-md p-5 mb-4">
             <h3 className="text-xl font-bold">{startDate} - {endDate}</h3>
@@ -10,4 +11,4 @@ const Job = ({ title, startDate, endDate, employer, description }) => {
     );
 };
 
-export default Job;
+export default JobCard;

@@ -1,10 +1,18 @@
-{
+export const jobject ={
     "bio": {
         "firstName": "Chad",
         "lastName": "Hicks",
         "summary": "human"
     },
     "jobs": [
+      {
+        key: 12,
+        title: 'Software Engineer',
+        employer: 'ICF',
+        startDate: 'Dec 2021',
+        endDate: 'Present',
+        description: 'I currently work on various government contracts using a variety of technologies, most recently focusing on TypeScript with React and Node.',
+      },
         {
             "key": 11,
             "startDate": "Mar 2021",

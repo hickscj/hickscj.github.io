@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* based off FF8200 */
 
@@ -35,7 +38,7 @@ $gamboge: hsla(39, 100%, 45%, 1);
 $mint-green: hsla(145, 53%, 57%, 1); //#b0e7c7;
 
 $background: $onyx;
-$text: white; 
+$text: white;
 
 $border: $onyx;
 
@@ -45,6 +48,13 @@ body {
     a {
        color: $mint-green;
     }
+}
+
+.header-image {
+    background-image: url('/img/snail.png');
+    background-position: bottom 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 button.linkish {
@@ -74,22 +84,9 @@ button.linkish {
 }
 
 #myResume {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
-    max-width: 800px;
     padding-bottom: 40px;
     header {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: .6fr 1.8fr 1fr 1.5fr;
-        padding-bottom: 10px;
         h2 {
             font-family: 'Mate SC', sans-serif;
             font-size: 3em;
