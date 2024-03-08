@@ -6,6 +6,14 @@
     },
     "jobs": [
         {
+            "key": 12,
+            "startDate": "Dec 2021",
+            "endDate": "Present",
+            "description": "Worked on government contracts as a full stack developer using Angular, MongoDB, Node, and most recently React and Postgres.",
+            "title": "Software Engineer",
+            "employer": "Semantic Bits / ICF"
+        },
+        {
             "key": 11,
             "startDate": "Mar 2021",
             "endDate": "Oct 2021",
