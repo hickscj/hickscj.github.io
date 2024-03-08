@@ -32,7 +32,7 @@ const App = () => {
 
             <About />
 
-            <img className="pt-2 pb-10 border-red-600 border-2" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
             <button id="to-top" onClick={ toTop }>^</button>
         </div>
     );

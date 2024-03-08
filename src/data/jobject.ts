@@ -11,7 +11,7 @@ export const jobject ={
         employer: 'ICF',
         startDate: 'Dec 2021',
         endDate: 'Present',
-        description: 'React, Node',
+        description: 'I currently work on various government contracts using a variety of technologies, most recently focusing on TypeScript with React and Node.',
       },
         {
             "key": 11,

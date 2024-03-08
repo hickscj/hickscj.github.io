@@ -50,6 +50,13 @@ body {
     }
 }
 
+.header-image {
+    background-image: url('/img/snail.png');
+    background-position: bottom 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 button.linkish {
     border: none;
     background: none;
