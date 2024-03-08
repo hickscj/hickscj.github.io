@@ -3,7 +3,10 @@ import React from 'react'
 export const Header = (props: any) => {
     return (
         <header className="pt-5">
-            <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
+          <div className="flex">
+            <div>
+              <img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" />
+            </div>
             <h2 className="select-none pl-2">Chad Hicks</h2>
             <ul className="p-4">
                 <li><a href="/" onClick={ props.toAbout }>About Me</a></li>
@@ -14,6 +17,7 @@ export const Header = (props: any) => {
             <div className="pt-1">
                 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10" alt="hickscj" />
             </div>
+          </div>
         </header>
     );
 }

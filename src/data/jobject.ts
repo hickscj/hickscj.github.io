@@ -5,6 +5,14 @@ export const jobject ={
         "summary": "human"
     },
     "jobs": [
+      {
+        key: 12,
+        title: 'Software Engineer',
+        employer: 'ICF',
+        startDate: 'Dec 2021',
+        endDate: 'Present',
+        description: 'React, Node',
+      },
         {
             "key": 11,
             "startDate": "Mar 2021",

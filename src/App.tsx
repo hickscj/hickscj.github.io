@@ -1,6 +1,5 @@
 import React from "react";
 import About from "./components/About";
-import './styles/tailwind.css';
 import './styles/index.scss';
 import { Header } from "./components/Header";
 import WorkExperience from "./components/WorkExperience";
@@ -26,14 +25,14 @@ const App = () => {
     }
 
     return (
-        <div id="myResume" className="container mx-auto">
+        <div id="myResume" className="container w-9/12 mx-auto">
             <Header toAbout={ toAbout } />
 
             <WorkExperience />
 
             <About />
 
-            <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            <img className="pt-2 pb-10 border-red-600 border-2" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
             <button id="to-top" onClick={ toTop }>^</button>
         </div>
     );

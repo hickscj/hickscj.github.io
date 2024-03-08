@@ -10,7 +10,7 @@ const WorkExperience: React.FC = () => {
         <section className="work-experience">
             {Object.values(jobs).sort((a, b) => b.key - a.key).map((job, idx) => {
                 if (idx < 5) {
-                    return(<JobCard key={idx} {...job} />)
+                    return(<JobCard {...job} />)
                 }
             })}
         </section>
