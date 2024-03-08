@@ -22,7 +22,7 @@ export const Header = (props: any) => {
               </div>
             </div>
           </div>
-          <div className="header-image flex flex-row bg-red-600">
+          <div className="header-image flex flex-row">
             &nbsp;
           </div>
         </header>

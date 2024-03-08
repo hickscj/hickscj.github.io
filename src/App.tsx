@@ -25,14 +25,16 @@ const App = () => {
     }
 
     return (
-        <div id="myResume" className="container w-9/12 mx-auto">
+        <div id="myResume" className="container w-9/12 md:w-7/12 mx-auto">
             <Header toAbout={ toAbout } />
 
             <WorkExperience />
 
             <About />
 
-            <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            <div className="flex flex-row justify-center">
+                <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
+            </div>
             <button id="to-top" onClick={ toTop }>^</button>
         </div>
     );
