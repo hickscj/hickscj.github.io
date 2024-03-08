@@ -1,4 +1,4 @@
-{
+export const jobject ={
     "bio": {
         "firstName": "Chad",
         "lastName": "Hicks",

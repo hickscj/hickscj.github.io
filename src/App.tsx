@@ -5,7 +5,7 @@ import './styles/index.scss';
 import { Header } from "./components/Header";
 import WorkExperience from "./components/WorkExperience";
 
-function App() {
+const App = () => {
 
     const toTop = () => {
         window.scrollTo({

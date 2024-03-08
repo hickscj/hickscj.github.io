@@ -1,37 +1,20 @@
-import React, {useEffect} from "react";
-import Job from "./Job";
-import { connect } from "react-redux";
-import { loadJobs } from "../store/thunks";
-import { getJobs } from "../store/selectors";
-// import {loadJobsSuccess} from "./actions";
+import React from "react";
+// import { Job } from "../data/Job";
+import { jobStore } from "../data/JobStore";
+import JobCard from "./JobCard";
 
-type WorkExperienceProps = {
-    jobs: any,
-    startLoadingJobs: any,
-};
-
-function WorkExperience ({ jobs, startLoadingJobs }: WorkExperienceProps) {
-    useEffect(() => {
-        startLoadingJobs()
-    }, [startLoadingJobs]);
+const WorkExperience: React.FC = () => {
+    const jobs = jobStore.loadJobs();
 
     return (
         <section className="work-experience">
-            {Array.from(jobs).sort((a, b) => b.key - a.key).map( (job, idx) => {
+            {Object.values(jobs).sort((a, b) => b.key - a.key).map((job, idx) => {
                 if (idx < 5) {
-                    return(<Job key={idx} {...job} />)
+                    return(<JobCard key={idx} {...job} />)
                 }
             })}
         </section>
     );
 }
 
-const mapStateToProps = state => ({
-    jobs: getJobs(state),
-});
-
-const mapDispatchToProps = dispatch => ({
-    startLoadingJobs: () => dispatch(loadJobs()),
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(WorkExperience);
+export default WorkExperience;
