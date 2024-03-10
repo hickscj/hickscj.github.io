@@ -33,9 +33,12 @@ const App = () => {
             <About />
 
             <div className="flex flex-row justify-center">
+                <button id="to-top" onClick={ toTop } aria-label="scroll to top">^</button>
+            </div>
+
+            <div className="flex flex-row justify-center">
                 <img className="pt-2 pb-10" src={ "../img/grandmas-full.png" } alt="Running Grandma's Marathon" />
             </div>
-            <button id="to-top" onClick={ toTop }>^</button>
         </div>
     );
 }
