@@ -17,7 +17,7 @@ export const jobject ={
             "key": 11,
             "startDate": "Mar 2021",
             "endDate": "Oct 2021",
-            "description": "Took on the challenge of a more client-facing role supporting the Loop SaaS product for Maestro. Met with clients and acted as a liaison to the engineering team. Wrote content update scripts in python or using our NX Nest app (TypeScript) to fulfill client request. Produced database reports using Postgres. Monitored API traffic using honeycomb.io.",
+            "description": "Took on the challenge of a more client-facing role supporting the Loop SaaS product for Maestro. Met with clients and acted as a liaison to the engineering team. Wrote content update scripts in python or using our NX Nest app (TypeScript) to fulfill client requests. Produced database reports using Postgres. Monitored API traffic using honeycomb.io.",
             "title": "Customer Success Manager (Technical)",
             "employer": "Maestro"
         },

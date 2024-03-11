@@ -52,9 +52,10 @@ body {
 
 .header-image {
     background-image: url('/img/snail.png');
-    background-position: bottom 0;
+    background-position: bottom 100px;
     background-size: 100%;
     background-repeat: no-repeat;
+    height: 8rem;
 }
 
 button.linkish {
@@ -128,9 +129,6 @@ button.linkish {
         outline: none;
         padding-top: 1px;
         cursor: pointer;
-        position: fixed;
-        bottom: 15px;
-        right: 10px;
         height: 50px;
         width: 50px;
     }
