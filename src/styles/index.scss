@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,95 +43,93 @@ $text: white;
 $border: $onyx;
 
 body {
-    background: $background;
-    color: $text;
-    a {
-       color: $mint-green;
-    }
+  background: $background;
+  color: $text;
+  a {
+    color: $mint-green;
+  }
 }
 
 .header-image {
-    background-image: url('/img/snail.png');
-    background-position: bottom 100px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 8rem;
+  background-image: url("/img/snail.png");
+  background-position: bottom 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 8rem;
 }
 
 button.linkish {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    outline: none;
-    &:last-of-type {
-        border-left: 1px dashed $border;
-    }
-    border-right: 1px dashed $border;
-    float: right;
-    padding: 0px 7px;
-    &.sel {
-        background: $mint-green;
-        color: $background;
-    }
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  outline: none;
+  &:last-of-type {
+    border-left: 1px dashed $border;
+  }
+  border-right: 1px dashed $border;
+  float: right;
+  padding: 0px 7px;
+  &.sel {
+    background: $mint-green;
+    color: $background;
+  }
 }
 
 .face {
-    border: 1px solid $border;
-    border-radius: 50px;
-    margin: 25px 20px 10px 0;
-    width: 5em;
+  border: 1px solid $border;
+  border-radius: 50px;
+  margin: 25px 20px 10px 0;
+  width: 5em;
 }
 
-#myResume {
-    font-family: 'Raleway', sans-serif;
-    padding-bottom: 40px;
-    header {
-        h2 {
-            font-family: 'Mate SC', sans-serif;
-            font-size: 3em;
-            font-weight: normal;
-            margin: 32px 0;
-        }
-        .info {
-            background-color: $persian-blue;
-            border-radius: 25px;
-            border: none;
-            color: white;
-            font-family: serif;
-            font-size: 22px;
-            font-weight: bold;
-            padding: 5px 15px;
-            margin: 10px 10px;
-        }
+#main {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 40px;
+  header {
+    h2 {
+      font-family: "Mate SC", sans-serif;
+      font-size: 3em;
+      font-weight: normal;
+      margin: 32px 0;
     }
-    #about {
-        border: 1px solid lighten($color: #000000, $amount: 89);
-        margin: 10px 0;
-        padding: 5px 20px;
-        h4 {
-            font-size: 1.2em;
-            &:first-of-type {
-                float: right;
-            }
-        }
-        ul li {
-            margin: 5px 0;
-        }
+    .info {
+      background-color: $persian-blue;
+      border-radius: 25px;
+      border: none;
+      color: white;
+      font-family: serif;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 5px 15px;
+      margin: 10px 10px;
     }
-    #to-top {
-        background: $mint-green;
-        border-radius: 30px;
-        border: none;
-        color: white;
-        font-size: 40px;
-        outline: none;
-        padding-top: 1px;
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
+  }
+  #about {
+    border: 1px solid lighten($color: #000000, $amount: 89);
+    margin: 10px 0;
+    padding: 5px 20px;
+    h4 {
+      font-size: 1.2em;
+      &:first-of-type {
+        float: right;
+      }
     }
+    ul li {
+      margin: 5px 0;
+    }
+  }
+  #to-top {
+    background: $mint-green;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    outline: none;
+    padding-top: 1px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
 }
-
-
