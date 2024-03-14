@@ -3,7 +3,7 @@ import React from 'react';
 export const Header = (props: any) => {
     return (
         <header className="pt-5 mb-10">
-          <div className="flex justify-center">
+          <div className="flex justify-between">
             <div className='flex flex-col w-100'>
               <div className='flex-row'>
                 <div><img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" /></div>
@@ -22,9 +22,7 @@ export const Header = (props: any) => {
               </div>
             </div>
           </div>
-          <div className="header-image flex flex-row">
-            &nbsp;
-          </div>
+          <div className="header-image flex flex-row"></div>
         </header>
     );
 }
