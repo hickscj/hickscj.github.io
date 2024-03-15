@@ -7,7 +7,7 @@ export const Header = (props: any) => {
             <div className='flex flex-col w-100'>
               <div className='flex-row'>
                 <div><img className="face ring-4 ring-yellow-500 ring-opacity-50" src="../img/chad_hicks.jpg" alt="" /></div>
-                <h2 className="select-none pl-2">Chad Hicks</h2>
+                <h2 className="select-none pl-2">Chad J. Hicks</h2>
               </div>
             </div>
             <div className='flex flex-wrap pl-20'>
@@ -18,7 +18,7 @@ export const Header = (props: any) => {
                   <li><a href="../resources/chad.hicks_Oct2021_resume.docx">Resume (docx)</a></li>
               </ul>
               <div className="pt-1 sm:pb-3">
-                  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10" alt="hickscj" />
+                  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10" alt="hickscj github stats" />
               </div>
             </div>
           </div>

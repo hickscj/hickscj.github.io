@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { jobStore } from "../data/JobStore";
 import JobCard from "./JobCard";
 
-const WorkExperience: React.FC = () => {
+const WorkExperience = () => {
   const jobs = jobStore.loadJobs();
 
   return (
