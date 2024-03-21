@@ -1,4 +1,3 @@
-import React, { ReactElement } from "react";
 import { jobStore } from "../data/JobStore";
 import JobCard from "./JobCard";
 
