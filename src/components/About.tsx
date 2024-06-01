@@ -6,7 +6,7 @@ export default class About extends Component {
             <section id="about" className='border border-gray-300 rounded-md'>
                 <h3 className="text-xl font-bold pb-1">About</h3>
                 <p>I am a Software Engineer who loves science, the outdoors, and learning new things. I&apos;m also interested in psychology and productivity.
-                    When I&apos;m not coding, you can find me running or biking along the Hudson, playing with my kid in the park, reading something, watching sci-fi, or playing music.
+                    When I&apos;m not coding, you can find me running or biking along the Hudson, playing with my kid in the park, reading, watching sci-fi, or playing music.
                 </p>
                 <h3 className="text-xl font-bold pt-5 pb-1">Personality and Disposition</h3>
                 <ul>
