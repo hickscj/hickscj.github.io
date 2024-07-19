@@ -44,7 +44,7 @@ $border: $onyx;
 
 body {
   background: $background;
-  background: linear-gradient(180deg, $background 0%, $gamboge 100%);
+  // background: linear-gradient(180deg, $background 0%, $gamboge 100%);
   color: $text;
   a {
     color: $mint-green;
@@ -57,6 +57,9 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 8rem;
+  @media screen and (max-width: 600px) {
+    height: 4rem;
+  }
 }
 
 button.linkish {
@@ -94,6 +97,9 @@ button.linkish {
       font-size: 3em;
       font-weight: normal;
       margin: 32px 0;
+      @media screen and (max-width: 600px) {
+        font-size: 2em;
+      }
     }
     .info {
       background-color: $persian-blue;
