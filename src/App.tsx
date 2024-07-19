@@ -1,4 +1,3 @@
-import React from "react";
 import About from "./components/About";
 import "./styles/index.scss";
 import { Header } from "./components/Header";
