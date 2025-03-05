@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const Header = (props: any) => {
   return (
@@ -6,20 +7,23 @@ export const Header = (props: any) => {
       <div className="w-full xl:w-1/2">
         <ul className="flex text-md justify-between">
           <li>
-            <a href="/" onClick={props.toAbout}>
+            {/* <a href="/" onClick={props.toAbout}> */}
+            {/*   About Me */}
+            {/* </a> */}
+            <NavLink to="/about" end>
               About Me
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="https://github.com/hickscj">GitHub</a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.pdf">
+            <a href="../resources/chad.hicks_Oct2021_resume.pdf" target="_blank">
               Resume (pdf)
             </a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.docx">
+            <a href="../resources/chad.hicks_Oct2021_resume.docx" target="_blank">
               Resume (docx)
             </a>
           </li>

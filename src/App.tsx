@@ -2,6 +2,7 @@ import About from "./components/About";
 import "./styles/index.scss";
 import { Header } from "./components/Header";
 import WorkExperience from "./components/WorkExperience";
+import { Outlet } from "react-router";
 
 const App = () => {
   const toTop = () => {
@@ -26,15 +27,7 @@ const App = () => {
     <div id="main" className="container w-9/12 md:w-7/12 mx-auto">
       <Header toAbout={toAbout} />
 
-      <About />
-
-      <WorkExperience />
-
-      <div className="flex flex-row justify-center">
-        <button id="to-top" onClick={toTop} aria-label="scroll to top">
-          ^
-        </button>
-      </div>
+      <Outlet />
 
       <div className="flex flex-row justify-center">
         <img
