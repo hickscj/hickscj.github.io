@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 export const Layout = (props: any) => {
   return (
-    <div id="main" className="container w-9/12 md:w-7/12 mx-auto">
+    <div id="main" className="container lg:w-7/12 mx-auto">
       <Header />
 
       <Outlet />
