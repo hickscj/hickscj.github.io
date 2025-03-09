@@ -35,13 +35,7 @@ export const Header = (props: any) => {
           <h2>Chad J. Hicks</h2>
         </div>
         <div className="flex-row">
-          <div>
-            <img
-              className="face"
-              src="../img/chad_hicks.jpg"
-              alt=""
-            />
-          </div>
+          <div className="face"></div>
         </div>
       </div>
       <div className="header-image flex flex-row"></div>
