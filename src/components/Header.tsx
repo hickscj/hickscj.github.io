@@ -19,12 +19,12 @@ export const Header = (props: any) => {
             <a href="https://github.com/hickscj">GitHub</a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.pdf" target="_blank">
+            <a href="../resources/chad.hicks_resume.pdf" target="_blank">
               Resume (pdf)
             </a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.docx" target="_blank">
+            <a href="../resources/chad.hicks_resume.docx" target="_blank">
               Resume (docx)
             </a>
           </li>
