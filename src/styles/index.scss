@@ -1,3 +1,4 @@
+@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
@@ -114,7 +115,7 @@ button.linkish {
     }
   }
   #about {
-    border: 1px solid lighten($color: #000000, $amount: 89);
+    border: 1px solid color.adjust($color: #000000, $lightness: 89%);
     margin: 10px 0;
     padding: 5px 20px;
     h4 {

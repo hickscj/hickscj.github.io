@@ -13,6 +13,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
@@ -23,7 +27,8 @@
     "types": [
       "react",
       "react-dom",
-      "jest", 
+      "jest",
+      "node",
       "vite/client"
     ]
   },

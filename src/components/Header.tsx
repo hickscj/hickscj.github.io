@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export const Header = (props: any) => {
   return (
@@ -6,31 +6,30 @@ export const Header = (props: any) => {
       <div className="w-full xl:w-1/2">
         <ul className="flex text-md justify-between">
           <li>
-            <a href="/" onClick={props.toAbout}>
+            <Link to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
               About Me
-            </a>
+            </Link>
           </li>
           <li>
             <a href="https://github.com/hickscj">GitHub</a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.pdf">
+            <a href="../resources/chad.hicks_resume.pdf" target="_blank">
               Resume (pdf)
             </a>
           </li>
           <li>
-            <a href="../resources/chad.hicks_Oct2021_resume.docx">
+            <a href="../resources/chad.hicks_resume.docx" target="_blank">
               Resume (docx)
             </a>
           </li>
         </ul>
       </div>
-      {/* <div className="pt-1 sm:pb-3">
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=hickscj&show_icons=true&locale=en&layout=compact&langs_count=10"
-          alt="hickscj github stats"
-        />
-      </div> */}
       <div className="flex justify-between w-100">
         <div className="select-none pl-2">
           <h2>Chad J. Hicks</h2>
@@ -38,7 +37,7 @@ export const Header = (props: any) => {
         <div className="flex-row">
           <div>
             <img
-              className="face ring-4 ring-yellow-500 ring-opacity-50"
+              className="face"
               src="../img/chad_hicks.jpg"
               alt=""
             />

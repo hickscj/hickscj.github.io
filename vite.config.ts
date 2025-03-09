@@ -7,8 +7,16 @@ export default defineConfig({
         outDir: 'docs'
     },
     plugins: [react(), viteTsconfigPaths()],
-    server: {    
+    server: {
         open: true,
-        port: 5173, 
+        port: 5173,
     },
+    preprocessorOptions: {
+    scss: {
+      api: 'modern-compiler',
+      importers: [
+        // ...
+      ],
+    },
+  },
 })
