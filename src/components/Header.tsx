@@ -30,13 +30,11 @@ export const Header = (props: any) => {
           </li>
         </ul>
       </div>
-      <div className="flex justify-between w-100">
+      <div className="flex justify-between w-full">
         <div className="select-none pl-2">
           <h2>Chad J. Hicks</h2>
         </div>
-        <div className="flex-row">
-          <div className="face"></div>
-        </div>
+        <div className="face"></div>
       </div>
       <div className="header-image flex flex-row"></div>
     </header>

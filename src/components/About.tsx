@@ -9,7 +9,7 @@ export default class About extends Component {
           I am a Software Engineer who loves science, the outdoors, and learning
           new things. I&apos;m also interested in psychology and productivity.
           When I&apos;m not coding, you can find me running or biking along the
-          Hudson river, playing with my kid in the park, reading something,
+          Hudson River, playing with my kid in the park, reading something,
           watching sci-fi, or playing music.
         </p>
         <h3 className="text-xl font-bold pt-5 pb-1">
