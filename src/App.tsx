@@ -1,4 +1,3 @@
-import "./styles/index.scss";
 import { Layout } from "./Layout";
 import { Home } from "./pages/Home";
 import { AboutPage } from "./pages/About";
