@@ -3,7 +3,7 @@ import { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <section id="about" className="border border-gray-300 rounded-md">
+      <section id="about" className="border-t border-gray-300 p-2 mb-4">
         <h3 className="text-xl font-bold pb-1">About</h3>
         <p>
           I am a Software Engineer who loves science, the outdoors, and learning
