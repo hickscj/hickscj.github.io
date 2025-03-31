@@ -13,7 +13,7 @@ export const jobject = {
       endDate: 'Present',
       description: `I currently work as a full-stack developer on a digital
         modernization project that uses React and Node/Express
-        built with Typescript, and with a Postgres database.`,
+        built with Typescript and Postgres.`,
     },
     {
       key: 11,
@@ -23,7 +23,7 @@ export const jobject = {
         the Loop SaaS product for Maestro. Met with clients and acted as a liaison
         to the engineering team. Wrote content update scripts in python or using
         our NX Nest app (TypeScript) to fulfill client requests.
-        Produced database reports using Postgres. Monitored API traffic using honeycomb.io.`,
+        Produced database reports using Postgres. Monitored API traffic using <a href="">honeycomb.io</a>.`,
       title: "Customer Success Manager (Technical)",
       employer: "Maestro"
     },

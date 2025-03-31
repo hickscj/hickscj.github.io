@@ -4,7 +4,7 @@ export const Header = (props: any) => {
   return (
     <header className="pt-5 mb-10">
       <div className="w-full xl:w-2/3">
-        <ul className="flex text-md justify-between">
+        <ul className="flex text-md space-x-4">
           <li>
             <Link to="/">
               Home
