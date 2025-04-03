@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export const Header = (props: any) => {
   return (
-    <header className="pt-5 mb-10">
+    <header className="pt-5 mb-5">
       <div className="w-full xl:w-2/3">
-        <ul className="flex text-md space-x-4">
+        <ul className="flex text-base space-x-4">
           <li>
             <Link to="/">
               Home
@@ -25,13 +25,14 @@ export const Header = (props: any) => {
           </li>
         </ul>
       </div>
-      <div className="flex justify-between w-full">
-        <div className="select-none pl-2">
-          <h2>Chad J. Hicks</h2>
+      <div className="flex flex-col md:flex-row justify-between">
+        <div>
+          <img className="w-50 m-5 ml-0 sepia border-2" src="img/chad.hicks.jpg" />
         </div>
-        <div className="face"></div>
+        <div className="select-none mt-auto">
+          <h2 className="mb-1">Chad J. Hicks</h2>
+        </div>
       </div>
-      <div className="header-image flex flex-row"></div>
     </header>
   );
 };

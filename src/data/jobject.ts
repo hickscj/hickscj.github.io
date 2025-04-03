@@ -11,9 +11,8 @@ export const jobject = {
       employer: 'ICF',
       startDate: 'Dec 2021',
       endDate: 'Present',
-      description: `I currently work as a full-stack developer on a digital
-        modernization project that uses React and Node/Express
-        built with Typescript and Postgres. We are also in the middle of a large datatbase migration from Oracle to Postgres using Python and Apache Airflow.
+      description: `I currently work as a software engineer on a digital
+        modernization project that uses React, Node, Express, Typescript and Postgres. We are also in the middle of a large datatbase migration from Oracle to Postgres using Python and Apache Airflow.
         Read more about our work <a href="https://www.icf.com/clients/health/cms-digital-modernization-quality-laboratory-testing" target="_blank">here</a>.
         `,
     },
