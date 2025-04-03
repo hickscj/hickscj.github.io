@@ -3,19 +3,19 @@
 
 | Email                | Phone        | Github             |
 | -------------------- | ------------ | ------------------ |
-| chadjhicks@gmail.com | 320-420-6629 | github.com/hickscj |
+| hickscj@proton.me | 320-420-6629 | github.com/hickscj |
 
 ## Education
 **B.A. Computer Science** - Harding University
 
 ## Technical Expertise
-- Languages/Syntax: TypeScript, JavaScript, HTML, CSS, SCSS, Webpack, PHP, Python, Markdown
-- Frameworks/Runtimes/CMSs: Angular, React, Node, NestJS, NextJS, Express, CodeIgniter, Drupal, WordPress
-- Databases: MySQL, Postgres, MongoDB, Firebase
-- Tools: VS Code, Vim, WebStorm and other JetBrains tools, Bash/Fish/Zsh Git
-- Design/Compliance: UI/UX, Accessibility, Responsive Design, Illustrator, Photoshop
-- Containerization/Virtualization: Docker, Vagrant, VirtualBox
-- AI: Github Copilot, MS Copilot, GPT4All
+- TypeScript, JavaScript, HTML, CSS, SCSS, Webpack, PHP, Python, Markdown
+- Angular, React, Node, NestJS, NextJS, Express, CodeIgniter, Drupal, WordPress
+- MySQL, Postgres, MongoDB, Firebase
+- VS Code, Vim, WebStorm and other JetBrains tools, Bash/Fish/Zsh Git
+- UI/UX, Accessibility, Responsive Design, Illustrator, Photoshop
+- Docker, Vagrant, VirtualBox
+- Github Copilot, MS Copilot, GPT4All
  
 ### Dec 2021- Present
 ## Software Engineer at ICF / SemanticBits
