@@ -13,7 +13,9 @@ export const jobject = {
       endDate: 'Present',
       description: `I currently work as a full-stack developer on a digital
         modernization project that uses React and Node/Express
-        built with Typescript and Postgres.`,
+        built with Typescript and Postgres. We are also in the middle of a large datatbase migration from Oracle to Postgres using Python and Apache Airflow.
+        Read more about our work <a href="https://www.icf.com/clients/health/cms-digital-modernization-quality-laboratory-testing" target="_blank">here</a>.
+        `,
     },
     {
       key: 11,
@@ -23,7 +25,7 @@ export const jobject = {
         the Loop SaaS product for Maestro. Met with clients and acted as a liaison
         to the engineering team. Wrote content update scripts in python or using
         our NX Nest app (TypeScript) to fulfill client requests.
-        Produced database reports using Postgres. Monitored API traffic using <a href="">honeycomb.io</a>.`,
+        Produced database reports using Postgres. Monitored API traffic using honeycomb.io.`,
       title: "Customer Success Manager (Technical)",
       employer: "Maestro"
     },
