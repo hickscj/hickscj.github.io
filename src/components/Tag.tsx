@@ -4,29 +4,30 @@ interface TagProps {
 }
 
 export function Tag({ tag }: TagProps) {
-    const tagClasses = ['rounded-md px-3 py-1 mt-1'];
+    const tagClasses = ['text-xs rounded-md px-3 py-1 mt-1'];
 
+    // stone, amber, yellow, orange, red
     switch(tag) {
         case 'react':
-            tagClasses.push('bg-blue-300 text-gray-700');
+            tagClasses.push('bg-amber-800');
             break;
         case 'typescript':
-            tagClasses.push('bg-blue-500');
+            tagClasses.push('bg-orange-900');
             break;
         case 'node':
-            tagClasses.push('bg-blue-500');
+            tagClasses.push('bg-stone-600');
             break;
         case 'postgres':
-            tagClasses.push('bg-blue-500');
+            tagClasses.push('bg-red-950');
             break;
         case 'oracle':
-            tagClasses.push('bg-red-500');
+            tagClasses.push('bg-yellow-800');
             break;
         case 'python':
-            tagClasses.push('bg-green-500');
+            tagClasses.push('bg-yellow-900');
             break;
         default:
-            tagClasses.push('bg-blue-400');
+            tagClasses.push('bg-gray-400');
     }
 
     return (
