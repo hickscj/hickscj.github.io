@@ -27,7 +27,7 @@ export const Header = (props: any) => {
       </div>
       <div className="flex flex-row">
         <div>
-          <img className="w-40 m-5 ml-0 sepia border-2" src="img/chad.hicks.jpg" />
+          <img className="w-40 lg:w-60 m-5 ml-0 sepia border-2" src="img/chad.hicks.jpg" />
         </div>
         <div className="select-none mt-auto">
           <h2 className="mb-2 md:mb-1">Chad J. Hicks</h2>
