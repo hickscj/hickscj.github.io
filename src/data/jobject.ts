@@ -11,9 +11,11 @@ export const jobject = {
       employer: 'ICF',
       startDate: 'Dec 2021',
       endDate: 'Present',
-      description: `I currently work as a full-stack developer on a digital
-        modernization project that uses React and Node/Express
-        built with Typescript, and with a Postgres database.`,
+      description: `I currently work as a software engineer on a digital
+        modernization project that uses React, Node, Express, TypeScript and Postgres. We are also in the middle of a large database migration from Oracle to Postgres using Python and Apache Airflow.
+        Read more about our work <a href="https://www.icf.com/clients/health/cms-digital-modernization-quality-laboratory-testing" target="_blank">here</a>.
+        `,
+      tags: ['react', 'typescript', 'python', 'postgres', 'oracle'],
     },
     {
       key: 11,

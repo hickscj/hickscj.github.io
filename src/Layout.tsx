@@ -1,10 +1,9 @@
-import React from "react";
 import { Header } from "./components/Header";
 import { Outlet } from "react-router-dom";
 
 export const Layout = (props: any) => {
   return (
-    <div id="main" className="container w-11/12 lg:w-7/12 mx-auto">
+    <div id="main" className="container w-11/12 lg:w-7/12 text-2xl text-base mx-auto">
       <Header />
 
       <Outlet />

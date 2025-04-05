@@ -52,7 +52,7 @@ body {
 
 .header-image {
   background-image: url("/img/snail.png");
-  background-position: bottom;
+  background-position: bottom 1rem;
   background-size: 100%;
   background-repeat: no-repeat;
   height: 8rem;
@@ -101,7 +101,6 @@ button.linkish {
       font-family: "Mate SC", sans-serif;
       font-size: 3em;
       font-weight: normal;
-      margin: 32px 0;
       @media screen and (max-width: 600px) {
         font-size: 2em;
       }
@@ -119,9 +118,8 @@ button.linkish {
     }
   }
   #about {
-    border: 1px solid color.adjust($color: #000000, $lightness: 89%);
-    margin: 10px 0;
-    padding: 5px 20px;
+    // margin: 10px 0;
+    // padding: 5px 20px;
     h4 {
       font-size: 1.2em;
       &:first-of-type {
