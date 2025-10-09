@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { Job } from "../data/Job";
 import DOMPurify from "dompurify";
 
-const JobCard = ({ title, startDate, endDate, employer, description, tags }: Job) => {
+const JobCard = ({ title, startDate, endDate, employer, description, id }: Job) => {
   // Sanitize the description to prevent XSS attacks
   const sanitizedDescription = DOMPurify.sanitize(description || "", {
     ALLOWED_TAGS: ["a", "b", "i", "em", "strong", "p", "br"],
@@ -9,11 +10,11 @@ const JobCard = ({ title, startDate, endDate, employer, description, tags }: Job
   });
 
   return (
-    <div className="border-t border-gray-300 p-2 mb-3">
+    <p className={(id === 11 ? 'clear-both' : '') + ' mb-7'}>
       <h3 className="text-1xl">{startDate} - {endDate}</h3>
-      <h3 className="text-2xl font-bold italic">{title} at {employer}</h3>
+      <h3 className="text-2xl sm:text-xs font-bold">{title} at {employer}</h3>
       <p className="pt-3" dangerouslySetInnerHTML={{ __html: sanitizedDescription }}></p>
-    </div>
+    </p>
   );
 };
 
