@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Accomplishments } from "./Accomplishments";
 
 export default class About extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class About extends Component {
             watching sci-fi, or playing music.
           </p>
         </section>
+        <Accomplishments />
         <section id="about" className="border-t border-gray-300 p-2 mb-4">
           <h3 className="text-xl font-bold pt-3 pb-1">
             Personality and Disposition

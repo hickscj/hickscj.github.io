@@ -25,14 +25,6 @@ export const Header = (props: any) => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-row">
-        <div>
-          <img className="w-40 lg:w-60 m-5 ml-0 sepia border-2" src="img/chad.hicks.jpg" alt="Profile picture of Chad J. Hicks" />
-        </div>
-        <div className="select-none mt-auto">
-          <h2 className="mb-2 md:mb-1">Chad J. Hicks</h2>
-        </div>
-      </div>
     </header>
   );
 };

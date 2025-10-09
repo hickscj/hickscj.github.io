@@ -6,7 +6,7 @@ export const jobject = {
   },
   jobs: [
     {
-      key: 12,
+      id: 12,
       title: 'Software Engineer',
       employer: 'ICF',
       startDate: 'Dec 2021',
@@ -18,7 +18,7 @@ export const jobject = {
       tags: ['react', 'typescript', 'python', 'postgres', 'oracle'],
     },
     {
-      key: 11,
+      id: 11,
       startDate: "Mar 2021",
       endDate: "Oct 2021",
       description: `Took on the challenge of a more client-facing role supporting
@@ -30,7 +30,7 @@ export const jobject = {
       employer: "Maestro"
     },
     {
-      key: 10,
+      id: 10,
       startDate: "Jan 2020",
       endDate: "Jul 2020",
       description: `Worked on PHP sites built with Laravel and Drupal, and dynamic
@@ -39,7 +39,7 @@ export const jobject = {
       employer: "Area 23"
     },
     {
-      key: 9,
+      id: 9,
       startDate: "Oct 2019",
       endDate: "Jan 2020",
       description: "Updated and maintained several websites built on legacy versions of the PHP framework CodeIgniter. Front-end development with JavaScript and CSS.",
@@ -47,7 +47,7 @@ export const jobject = {
       employer: "CodePros"
     },
     {
-      key: 8,
+      id: 8,
       startDate: "Oct 2015",
       endDate: "Aug 2019",
       description: "Full stack development of a text messaging system for customer service at hotels and malls. Worked on sending of dynamic surveys and automated responses to guest feedback. JavaScript, CoffeeScript, CSS, PHP.",
@@ -55,7 +55,7 @@ export const jobject = {
       employer: "Kipsu"
     },
     {
-      key: 7,
+      id: 7,
       startDate: "Jan 2020",
       endDate: "Oct 2020",
       description: "Rebranded our software according to brand recommendations from outside design/marketing company. Worked with HTML, CSS (SASS), and Javascript (Dojo) to implement new UI/UX designs. Progressively developed feature enhancements for each new software release.",
@@ -63,7 +63,7 @@ export const jobject = {
       employer: "Calabrio"
     },
     {
-      key: 6,
+      id: 6,
       startDate: "2013",
       endDate: "2014",
       description: "Created a mobile app with a REST API using Ember.js and Phonegap. Collaborated on the development of a new version of Aeris API using Backbone.js.",
@@ -71,7 +71,7 @@ export const jobject = {
       employer: "Media Logic Group"
     },
     {
-      key: 5,
+      id: 5,
       startDate: "2011",
       endDate: "2013",
       description: "Managed 7 websites associated with the University of Missouri Bond Life Sciences Center using PHP with Oracle. Coordinated development of new features and implementations while keeping information current. Consulted for marketing and communications plans.",
@@ -79,7 +79,7 @@ export const jobject = {
       employer: "MU Bond Life Sciences Center"
     },
     {
-      key: 4,
+      id: 4,
       startDate: "2008",
       endDate: "2011",
       description: "Managed the websites and online services for Campus Dining at the University of Missouri. Brainstormed marketing initiatives and campaigns with the marketing team and CDS leadership. Implemented new designs for the website and posted menus. Started the Campus Dining Services Twitter account.",
@@ -87,7 +87,7 @@ export const jobject = {
       employer: "MU Campus Dining Services"
     },
     {
-      key: 3,
+      id: 3,
       startDate: "2007",
       endDate: "2009",
       description: "Oversaw baristas at high-ranked regional coffee chain and roastery in Missouri. Customer service, making food and drinks, and accounts tallying at shift end. Developed relationships across branches of the regional chain and assisted with process improvements.",
@@ -95,7 +95,7 @@ export const jobject = {
       employer: "Kaldi's Coffee"
     },
     {
-      key: 2,
+      id: 2,
       startDate: "2006",
       endDate: "2007",
       description: "Managed customer database records and updated information. Ran production line for oral suspension solution. Answered questions regarding the product from parents, pharmacists, and doctors to help promote understanding of the treatment of pediatric GERD and EER (acid reflux diseases).",
@@ -103,7 +103,7 @@ export const jobject = {
       employer: "Reflux Solutions"
     },
     {
-      key: 1,
+      id: 1,
       dates: "2000 - 2005",
       startDate: "2000",
       endDate: "2005",

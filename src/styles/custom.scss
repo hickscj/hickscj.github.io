@@ -97,6 +97,14 @@ button.linkish {
   font-family: "Raleway", sans-serif;
   padding-bottom: 40px;
   header {
+    ul > li {
+      border-radius: .5rem;
+      padding: .3rem .5rem;
+      &:hover {
+        background-color: hsla(39, 100%, 45%, 0.5);
+        background-blend-mode: color-burn;
+      }
+    }
     h2 {
       font-family: "Mate SC", sans-serif;
       font-size: 3em;
