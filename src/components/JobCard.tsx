@@ -12,7 +12,7 @@ const JobCard = ({ title, startDate, endDate, employer, description, id }: Job) 
   return (
     <p className={(id === 11 ? 'clear-both' : '') + ' mb-7'}>
       <h3 className="text-1xl">{startDate} - {endDate}</h3>
-      <h3 className="text-2xl sm:text-xs font-bold">{title} at {employer}</h3>
+      <h3 className="text-base sm:text-xl font-bold">{title} at {employer}</h3>
       <p className="pt-3" dangerouslySetInnerHTML={{ __html: sanitizedDescription }}></p>
     </p>
   );

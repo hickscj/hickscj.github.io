@@ -8,6 +8,9 @@ const App = () => {
   return (
     <div className="bg-[url(/img/background.svg)]">
       {/* <Background /> */}
+      <div className="flex justify-center">
+        
+      </div>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
