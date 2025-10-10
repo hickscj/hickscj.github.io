@@ -6,7 +6,7 @@ import { Background } from "./components/Background";
 
 const App = () => {
   return (
-    <div className="bg-[url(/img/background.svg)]">
+    <div className="bg-[url(/img/background.svg)] container max-w-[1800px] mx-auto">
       {/* <Background /> */}
       <div className="flex justify-center">
         
