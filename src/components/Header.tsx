@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export const Header = (props: any) => {
   return (
-    <header className="flex justify-between pt-5 mb-5">
-      <ul className="flex text-base space-x-4">
+    <header className="justify-between pt-5 mb-5">
+      <ul className="flex justify-center text-base space-x-0 whitespace-nowrap">
         <li>
           <Link to="/">
             Home
@@ -23,7 +23,9 @@ export const Header = (props: any) => {
           </a>
         </li>
       </ul>
-      <h2 className="font-[Mate_SC] text-2xl pr-5">Chad J. Hicks</h2>
+      <div className="flex justify-center">
+        <h2 className="font-[Mate_SC] text-5xl md:text-7xl whitespace-nowrap">Chad Hicks</h2>
+      </div>
     </header>
   );
 };
